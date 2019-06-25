@@ -18,6 +18,7 @@ Postgresql server running on localhost:5432 and createdb, dropdb, psql commands 
 1. On your own machine:
 
 ```bash
+$ cd backend
 $ createdb comp9900
 $ psql comp9900
 comp9900=# \i init.sql
@@ -84,6 +85,7 @@ $ python -m spacy download en_core_web_sm
 
 In the project directory, you can run:
 ```bash
+$ cd ..
 $ npm start
 ```
 
