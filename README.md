@@ -1,4 +1,6 @@
-# The requirement of this application
+# Quick start
+
+### The requirement of this application
 
 Database: Postgresql, runs on localhost port 5432 with a database named "comp9900".
 Frontend: React/Redux
@@ -8,7 +10,7 @@ NLP Process: Spacy library and statistical model "en_core_web_sm". For detail, s
 setup NLP part.
 
 
-### Step 1: Setup database ###
+## Step 1: Setup database ##
 
 This application uses Postgresql as database to manage and store data. Make sure you have a 
 Postgresql server running on localhost:5432 and createdb, dropdb, psql commands could be used.
@@ -29,7 +31,7 @@ $ dropdb comp9900
 ```
 
 
-### Step 2: Setup backend server ###
+## Step 2: Setup & run the backend server ##
 
 This application uses Python3 as running environment and Flask as framework.
 There are 2 ways to setup server, run the following command.
@@ -52,7 +54,7 @@ $ pip install -r requirements.txt
 $ pip3 install -r requirements.txt
 ```
 
-# Start application
+### run the server
 
 After you finish all setup part, you can use following command to start the backend server
 
@@ -78,7 +80,7 @@ $ python3 -m spacy download en_core_web_sm
 $ python -m spacy download en_core_web_sm
 ```
 
-### Step 3: run the app ###
+## Step 3: run the app ##
 
 In the project directory, you can run:
 
@@ -87,11 +89,13 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-##Initial users:
-username         password
-employer1         123456
-instructor1       123456
-candidate1        123456
+## Initial users:
+<pre>
+-- username        --password
+  employer1         123456
+  instructor1       123456
+  candidate1        123456
+</pre>
 
 
 
