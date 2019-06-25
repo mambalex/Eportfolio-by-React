@@ -1,0 +1,455 @@
+.Portfolio{
+    width: 100%;
+    /*border: 1px solid rgb(233,233,233);*/
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background-color: white;
+}
+
+.Portfolio .profile-edit{
+    float: right;
+    cursor: pointer;
+}
+
+.Portfolio>.bottom i{
+    cursor: pointer;
+    color:rgb(48,178,68);
+}
+
+
+.Portfolio .top{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+    background-color:#66cc99;
+}
+.Portfolio>.bottom{
+    display: flex;
+    flex-direction: column;
+    margin: 0 3%;
+}
+.Portfolio .top .name{
+    display: inline-block;
+    font-size: 50px;
+    font-family: Ambroise;
+    width: 35%;
+    padding-left: 20px;
+}
+
+.Portfolio .top .top-contact{
+    /*	display: none;*/
+    /*width: 43.5%;*/
+    width: 40%;
+    height: 50%;
+    /*display: flex;*/
+    align-self: flex-end;
+    margin-bottom: 2%;
+    font-size: 12px;
+    /*border: 1px solid black;*/
+}
+
+
+.Portfolio .top .top-contact .bottom{
+    width: 100%;
+    /*border: 2px solid black;*/
+    border-top: none;
+}
+
+.Portfolio .top .top-contact .bottom .contact-l{
+    margin: 1% 2%;
+    margin-left: 7%;
+    /*padding-right: 40px;*/
+
+}
+
+.Portfolio .top .top-contact .bottom .contact-l .text{
+    display: inline-block;
+    width: 60px;
+}
+
+.Portfolio .top .top-contact .bottom .contact-icon{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.Portfolio .top .top-contact .bottom .email,.phone,.github{
+    display: inline-block;
+}
+
+.Portfolio .top .image{
+    margin-right: 0;
+    align-self: stretch;
+    height: 100%;
+    /*width: 99px;*/
+    width:25%;
+    object-fit: contain;
+}
+.Portfolio .top .image img{
+    max-height:150px;
+    max-width:99px;
+}
+
+
+
+.Portfolio .line-text .text{
+    margin-left: 3%;
+    margin-bottom: 1%;
+    /*color: #ffcc00;*/
+    font-size:18px;
+    font-weight: 500;
+}
+.Portfolio .line-text .line{
+    border: 2px solid #66cc99;
+}
+
+
+/*about me*/
+
+
+.Portfolio .about-me{
+    width: 100%;
+    /*margin-right:3%;*/
+    margin-top: 5%;
+    position:relative;
+}
+
+.update{
+    position:absolute;
+    right:20px;
+    /*bottom:70px;*/
+    top:-20px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .355rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    cursor: pointer;
+}
+
+.update:hover, .update:focus{
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+    text-decoration: none;
+}
+
+
+.Portfolio .about-me>.profile{
+    margin: 2% 10%;
+    width: 80%;
+}
+
+.about-me-input{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+
+/*home-tech-skills*/
+
+.Portfolio .home-tech-skills{
+    width: 100%;
+    /*margin-right:3%;*/
+    margin-top: 5%;
+}
+
+
+.Portfolio .home-tech-skills>.skill-lists ul{
+    margin-left: 3%;
+    width: 70%;
+    list-style: none;
+    margin-top: 16px !important;
+}
+
+.Portfolio .home-tech-skills>.skill-lists ul li{
+    margin-bottom: 8px;
+}
+
+.Portfolio .home-tech-skills>.skill-lists ul li a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    position: relative;
+}
+
+
+.Portfolio .home-tech-skills>.skill-lists ul li .percentage{
+    width: 90%;
+    height: 6px;
+    margin-top:5px;
+    background:#4a4e51;
+    position: relative;
+    z-index: 1;
+}
+
+.perct{
+    position: absolute;
+    right: -80px;
+    bottom:-8px;
+}
+
+.Portfolio .home-tech-skills>.skill-lists ul li .percentage .left{
+    position: absolute;
+    left: 0;
+    height: 6px;
+    background:#66cc99;
+    z-index: 2;  }
+
+/*.home-tech-skills>.skill-lists ul li:nth-child(1)>.percentage>.left{animation: skill-1 0.6s ease forwards;}*/
+/*.home-tech-skills>.skill-lists ul li:nth-child(2)>.percentage>.left{animation: skill-2 0.6s ease forwards;}*/
+/*.home-tech-skills>.skill-lists ul li:nth-child(3)>.percentage>.left{animation: skill-3 0.6s ease forwards;}*/
+/*.home-tech-skills>.skill-lists ul li:nth-child(4)>.percentage>.left{animation: skill-4 0.6s ease forwards;}*/
+/*.home-tech-skills>.skill-lists ul li:nth-child(5)>.percentage>.left{animation: skill-5 0.6s ease forwards;}*/
+
+/*@keyframes skill-1{0%{width: 0;}100%{width: 80%;}}*/
+/*@keyframes skill-2{0%{width: 0;}100%{width: 90%;}}*/
+/*@keyframes skill-3{0%{width: 0;}100%{width: 80%;}}*/
+/*@keyframes skill-4{0%{width: 0;}100%{width: 60%;}}*/
+/*@keyframes skill-5{0%{width: 0;}100%{width: 50%;}}*/
+
+
+
+
+
+/*home-projects*/
+.Portfolio .home-projects{
+    position:relative;
+    margin-top: 5%;}
+
+.Portfolio .home-projects>.bottom ul{
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.Portfolio .home-projects>.bottom ul li{
+    margin-bottom: 5px;
+}
+
+.Portfolio .home-projects>.bottom ul li div{
+    float:left;
+    cursor:pointer;
+}
+.Portfolio .home-projects>.bottom ul li a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+.project-popup {
+    display:none;
+    width: 460px;
+    position: absolute;
+    left:100px;
+    background: rgb(300,300,300);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    padding-bottom: 30px;
+}
+.project-popup>div{
+    padding: 15px 15px 15px 35px;
+}
+
+.project-popup .tech-title, .project-popup .link-title{
+    font-weight:500;
+    margin-left:0;
+}
+
+.project-popup .url{
+    margin-left:30px;
+}
+
+.project-popup .url a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.project-popup .title{
+    text-align: center;
+    background: #66cc99;
+    height: 45px;
+    padding:0;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+
+/*home-experience*/
+.Portfolio .home-experience {
+    margin-top: 5%;
+}
+
+.Portfolio .home-experience .all-experience{
+    margin-right: 5%;
+    margin-top: 5%;
+    list-style: none;
+}
+.Portfolio .home-experience .all-experience .experience{
+    margin: 3% 0 10% 0;
+
+}
+.Portfolio .home-experience .all-experience .experience .title{
+    width: 70%;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.Portfolio .home-experience .all-experience .experience .title:empty:before {
+    content:attr(data-placeholder);
+    color:rgb(200,200,200);
+}
+
+.Portfolio .home-experience .all-experience .experience .date:empty:before {
+    content:attr(data-placeholder);
+    color:rgb(200,200,200);
+}
+
+
+.Portfolio .home-experience .all-experience .experience .date{
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 12px;
+}
+.Portfolio .home-experience .all-experience .experience .text{
+    font-size: 13px;
+    margin-top: 10px;
+
+}
+
+.experience-edit{
+    float: right;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.experience-delete{
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+.experience-add{
+    float: right;
+    cursor: pointer;
+}
+
+
+
+/*home-education*/
+
+.Portfolio .home-education {
+    margin: 5% 0;
+}
+
+.Portfolio .home-education .all-edu{
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 5%;
+}
+.Portfolio .home-education .all-edu .edu{
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+.Portfolio .home-education .all-edu .edu .title{
+    width: 70%;
+    font-weight: 500;
+    display: inline-block;
+}
+.Portfolio .home-education .all-edu .edu .date{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.Portfolio .home-education .all-edu .edu .major{
+    margin-left: 10px;
+}
+
+.Portfolio .home-education .all-edu .edu .degree{
+    font-size: 13px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.Portfolio .home-education .all-edu .edu .title:empty:before {
+    content:attr(data-placeholder);
+    color:rgb(200,200,200);
+}
+
+.Portfolio .home-education .all-edu .edu .date:empty:before {
+    content:attr(data-placeholder);
+    color:rgb(200,200,200);
+}
+
+.Portfolio .home-education .all-edu .edu .degree:empty:before {
+    content:attr(data-placeholder);
+    color:rgb(200,200,200);
+}
+
+.education-edit, .ps-edit{
+    float: right;display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.education-delete, .ps-delete{
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+
+
+.education-add,.ps-add{
+    float: right;
+    cursor: pointer;
+}
+
+/*personal skills*/
+
+.personal-skill{
+    margin-bottom:50px;
+}
+
+.personal-skill, .ps-delete i{
+    margin-top: 9px;
+}
+
+.personal-skill ul{
+    margin:20px 0 10px 40px;
+}
+.personal-skill li{
+    margin-top:15px;
+    height:30px
+}
+.personalSkill{
+    width: 90%;
+    height: 90%;
+    font-size: 15px;
+}
+
+.Portfolio textarea{
+    width: 100%;
+}
+
+.Portfolio img{
+    display: block;
+    height: 150px;
+    object-fit: cover;
+}

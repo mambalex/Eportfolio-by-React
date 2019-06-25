@@ -1,0 +1,5 @@
+COMP9900 Team 488 Week7 Meeting Record
+03/09/2018
+
+This week we finished most function of database and the students and search result's pages.
+Next week Han Zhang will continue write SQL, Yang Yang will start write backend model and Zhiqin Zhang will code employers, instructors and faculty managers interfaces.

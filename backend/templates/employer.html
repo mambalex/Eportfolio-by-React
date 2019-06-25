@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employer</title>
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../static/css/font/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/header.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/employer.css">
+	<!--<meta http-equiv="refresh" content="5" >-->
+
+</head>
+<body>
+	<div class="main-container">
+			<nav class="header">
+                <div class="home">
+                    <a href="">Search</a>
+                </div>
+				<div class="welcome-user">
+                          Welcome, John
+                </div>
+                <div class="user">
+                    <i class="fas fa-user-alt"></i>
+                    <div class="dropdown-content">
+                        <a href="./profile" id='profile'>My Profile</a>
+                        <a href="./" id='logout'>Logout</a>
+                    </div>
+                </div>
+            </nav>
+	        <div class="bottom wrapper">
+		        <div class="openings-canddt-rcmdt">
+		        	<div class="openings top-box">
+		        		<div class="icons"><i class="flaticon-bag"></i></div>
+		        		<div class="title-num">
+		        			<div class="num"></div>
+		        			<div class="title">Opening Jobs</div>
+		        		</div>
+		        	</div>
+		        	<div class="candidates top-box">
+		        			<div class="icons"><i class="flaticon-resume"></i></div>
+		        			<div class="title-num">
+			        			<div class="num"></div>
+			        			<div class="title">Candidates</div>
+		        			</div>
+		        	</div>
+		        	<div class="interviews top-box">
+		        			<div class="icons"><i class="flaticon-businessman"></i></div>
+		        			<div class="title-num">
+			        			<div class="num"></div>
+			        			<div class="title">Interviews</div>
+		        			</div>
+		        	</div>
+		        </div>
+
+		 <!-- new-opening-job -->
+		       <div class="new-opening-job ">
+		        	<div class="title">
+		        		<div class="job-title"><input type="text"  placeholder="Job title"></div>
+		        		<i class="fas fa-backspace job-creation-close"></i>
+						<div id="successAlert" class="alert alert-success longin-alert" role="alert" style="display:none;"></div>
+				   		<div id="errorAlert" class="alert alert-danger longin-alert" role="alert" style="display:none;"></div>
+		        	</div>
+
+		        	<div class="salary-location"> 
+		        		<div class="salary list"> 
+		        			<i class="flaticon-money"></i>
+		        			<span class="left">Salary:</span>
+		        			<input type="text" name="add-salary" placeholder="salary">
+		        		</div>
+		        		<div class="location list">
+		        			<i class="flaticon-pin"></i>
+		        			<span class="left">Location:</span>
+		        			<input type="text" name="add-location" placeholder="location">
+		        		</div>
+		        		<div class="company list">
+		        			<i class="flaticon-branch"></i>
+		        			<span class="left">Company:</span>
+		        			<input type="text" name="add-company" placeholder="Company">
+		        		</div>
+		        		<div class="work-type list">
+		        			<i class="flaticon-bag"></i>
+		        			<span class="left">Work Type:</span>
+		        			<input type="text" name="add-work-type" placeholder="Work Type">
+		        		</div>
+		        		<div class="create-job"><button type="button">Create a Job</button></div>
+		        	</div>
+		        	<div class="job-summary">Job Summary:</div>
+		        	<div class="description">
+		        		<textarea name="textarea" class="add-job-summary" placeholder="Job Summary"></textarea>
+		        	</div>
+		        	<div class="job-responsibilities">Responsibilities:</div>
+		        	<div class="responsibilities">
+		        		<ul>
+		        			<li>		        		
+		        				<input type="" class="add-responsibilities" placeholder="responsibilities">
+		        				<button>Add</button>
+		        			</li>
+		        		</ul>
+
+		        	</div>
+		        	<div class="skills-required-title">Software and IT Skills Required:</div>
+		        	<div class="skills-required">
+		        		<ul>
+		        			<li>		        		
+		        				<input type="" class="add-it-skills"placeholder="skills">
+		        				<button>Add</button>
+		        			</li>
+		        		</ul>
+		        	</div>
+		        	<div class="personal-skills-title">Personal Attributes and Strengths:</div>
+		        	<div class="personal-skills">
+		        		<ul>
+		        			<li>		        		
+		        				<input type="" class="add-personal-strengths" placeholder="personal strengths">
+		        				<button>Add</button>
+		        			</li>
+		        		</ul>
+		        	</div>
+		        	<div class="others-title">Others:</div>
+		        	<div class="others">
+		        		<ul>
+		        			<li>		        		
+		        				<input type="" class="add-ohters" placeholder="others">
+		        				<button>Add</button>
+		        			</li>
+		        		</ul>
+		        	</div>
+		        </div>
+
+<!--candidates-popup-->
+				<div class="candidate-popup">
+					<div class="top">
+						<div class="name">Alex Zhang</div>
+						<div class="top-contact">
+
+							<div class="bottom">
+								<div class="contact-l">
+									<div class="contact-icon"><i class="far fa-envelope"></i></div>
+									<div class="text">Email:</div>
+									<div class="email">alexzhangzhiqin@gmail.com</div></div>
+								<div class="contact-l">
+									<div class="contact-icon"><i class="fas fa-phone"></i></div>
+									<div class="text">Phone:</div>
+									<div class="phone">1223</div></div>
+								<div class="contact-l">
+									<div class="contact-icon"><i class="fab fa-github"></i></div>
+									<div class="text">Github:</div>
+									<div class="github">dfdf</div>
+								</div>
+							</div>
+						</div>
+						<!--<i class="fas fa-backspace candidate-popup-close"></i>-->
+						<img  src="../static/img/default.png" class="img-popup" alt="user portrait" >
+					</div>
+					<div class="bottom">
+						<div class="about-me">
+							<div class="line-text">
+								<div class="text">About Me</div>
+								<div id="successAlert2" class="alert alert-success longin-alert" role="alert" style="display:none;">Successfully schedual an interview!</div>
+				   		<div id="errorAlert2" class="alert alert-danger longin-alert" role="alert" style="display:none;"></div>
+								<select name="" id="select_job">
+
+								</select>
+								<div class="save-can"><button type="button">Schedule an interview</button></div>
+								<div class="line"></div>
+							</div>
+							<div class="profile edit">
+								<p>A fresh graduate of Computer Engineering pursuing a career as a Software developer to ensure that system software functions efficiently.</p>
+							</div>
+
+						</div>
+						<div class="home-tech-skills">
+							<div class="line-text">
+								<div class="text">Technical Skills</div>
+								<div class="line"></div>
+							</div>
+							<div class="skill-lists">
+								<ul>
+									<li>
+	        							<a href="">HTML</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">80%</div>
+	        							</div>
+
+	        						</li>
+	        						<li>
+	        							<a href="">CSS</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">90%</div>
+	        							</div>
+
+	        						</li>
+	        						<li>
+	        							<a href="">JavaScript</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">80%</div>
+	        							</div>
+
+	        						</li>
+	        						<li>
+	        							<a href="">Python</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">60%</div>
+	        							</div>
+
+
+	        						</li>
+	        						<li>
+	        							<a href="">AWS</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">50%</div>
+	        							</div>
+
+	        						</li>
+								</ul>
+							</div>
+
+
+						</div>
+						<div class="home-projects">
+							<div class="line-text">
+								<div class="text">Projects</div>
+								<div class="line"></div>
+							</div>
+							<div class="bottom">
+								<ul class="home-projects-name">
+								</ul>
+							</div>
+							<div class="project-popup">
+	        				<div class="title"><p>E-portfolio</p></div>
+	        				<div class="description"></div>
+	        				<div class="tech">
+	        					<div class="tech-title">Technologies:</div>
+	        					<div class="text">
+	        						<ul>
+	        						</ul>
+	        					</div>
+	        				</div>
+	        				<div class="link">
+	        					<div class="link-title"> Link to the project:</div>
+	        				  	<div class="url"><a href=""></a> </div>
+	        				</div>
+	        			</div>
+
+						</div>
+						<div class="home-experience">
+							<div class="line-text">
+								<div class="text">Experience</div>
+								<div class="line"></div>
+							</div>
+							<ul class="all-experience">
+
+							</ul>
+						</div>
+						<div class="home-education">
+							<div class="line-text">
+								<div class="text">Education</div>
+								<div class="line"></div>
+							</div>
+							<ul class="all-edu">
+
+							</ul>
+						</div>
+						<div class="personal-skill">
+	        				<div class="line-text">
+	        					<div class="text">Personal Skills</div>
+	        					<div class="line"></div>
+	        				</div>
+	        				<ul>
+
+	        				</ul>
+	        			</div>
+
+
+					</div>
+
+
+				</div>
+
+ <!-- job-popup -->
+		        <div class="job-popup">
+		        	<div class="title">
+		        		<span>Front-End Developer</span>
+		        		<i class="fas fa-backspace job-popup-close"></i>
+		        	</div>
+		        	<div class="salary-location"> 
+		        		<div class="salary list"> 
+		        			<i class="flaticon-money"></i>
+		        			<span class="left">Salary:</span>
+		        			<span id="salary">$100k </span>
+		        			<span class="per-year">per year</span>
+		        		</div>
+		        		<div class="location list">
+		        			<i class="flaticon-pin"></i>
+		        			<span class="left">Location:</span>
+		        			<span id="lct">Sydney</span>
+		        		</div>
+		        		<div class="company list">
+		        			<i class="flaticon-branch"></i>
+		        			<span class="left">Company:</span>
+		        			<span id="company">Apple</span>
+		        		</div>
+		        		<div class="work-type list">
+		        			<i class="flaticon-bag"></i>
+		        			<span class="left">Work Type:</span>
+		        			<span id="work-type">Permanent</span>
+		        		</div>
+		        		<!--<div class="save-job"><button type="button">Save this job</button></div>-->
+		        	</div>
+		        	<div class="job-summary">Job Summary:</div>
+		        	<div class="description">
+		        		<p>A market leading organisation is currently seeking a Front-End developer to work on exciting and engaging projects.You will have at least 2 years Web Development experience and the drive to continuously learn and further develop your skills.</p>
+		        	</div>
+		        	<div class="job-responsibilities">Responsibilities:</div>
+		        	<div class="responsibilities">
+		        		<ul>
+		        			<li>Significant experience with UI Design and Development </li>
+		        			<li>Working on Angular 4 or 5 frameworks</li>
+		        			<li>Demonstrated ability (portfolio) in producing high quality web and mobile user interfaces</li>
+		        			<li>Proficient in creating interactive wireframes, prototypes, storyboards and userflows</li>
+		        			<li>Hands on experience working within Agile project teams</li>
+		        		</ul>
+		        	</div>
+		        	<div class="skills-required-title">Software and IT Skills Required:</div>
+		        	<div class="skills-required">
+		        		<ul>
+		        			<li> Strong web development experience (Javascript / HTML5, CSS) </li>
+		        			<li>Responsive design experience</li>
+		        			<li>   React / Redux experience</li>
+		        			<li> Possession of online portfolio presenting range of work up to date, e.g. in GitHub</li>
+		        		</ul>
+		        	</div>
+		        	<div class="personal-skills-title">Personal Attributes and Strengths:</div>
+		        	<div class="personal-skills">
+		        		<ul>
+		        			<li> To be able to work Autonomously</li>
+		        			<li>Service oriented and passionate about helping clients</li>
+		        			<li>Strong analytical and problem solving skills</li>
+		        			<li>Disciplined, organized, punctual and caring attitude</li>
+		        			<li>Excellent communication skills – verbal and written</li>
+		        		</ul>
+		        	</div>
+		        	<div class="others-title">Others</div>
+		        	<div class="others">
+		        		<p>Career development and advancement will be continuously on offer within this ever growing organisation!</p>
+		        	</div>
+		        </div>
+
+
+<!--add-jobs button-->
+		        <div class="add-jobs"><i class="fas fa-plus-circle fa-2x"></i></div>
+
+			<div class="job-wrapper">
+<!--jobs container-->
+		        <!--<div class="jobs-container">-->
+		        	<!--<div class="top">-->
+		        		<!--<div class="title">-->
+								<!--<span class="dot"></span>-->
+								<!--<span class="job-title">Front-End Developer</span>-->
+		        				<!--<i class="fas fa-map-marker-alt"></i>-->
+		        				<!--<span class="location">Sydney CBD</span>-->
+		        		<!--</div>-->
+		        		<!--<div class="info"><button type="button">More Info</button></div>-->
+
+		        	<!--</div>-->
+
+		        	<!--<div class="middle">-->
+		        		<!--<div class="middle-container">-->
+		        			<!--<div><i class="fas fa-users"></i></div>-->
+		        			<!--<div class="num-text">-->
+		        				<!--<div class="num">3</div>-->
+		        				<!--<div class="text">Candidates</div>-->
+		        			<!--</div>-->
+		        		<!---->
+		        		<!--</div>      		-->
+		        		<!--<div class="middle-container">-->
+		        			<!--<div><i class="flaticon-interview"></i></div>-->
+		        			<!--<div class="num-text">-->
+		        				<!--<div class="num">3</div>-->
+		        				<!--<div class="text">Interviews</div>-->
+		        			<!--</div>-->
+		        		<!--</div> -->
+		        		<!--<div class="middle-container">-->
+		        			<!--<div><i class="flaticon-test"></i></div>-->
+		        			<!--<div class="num-text">-->
+		        				<!--<div class="num">2</div>-->
+		        				<!--<div class="text">Tests</div>-->
+		        			<!--</div>-->
+		        		<!--</div>      		-->
+		        		<!--<div class="middle-container">-->
+		        			<!--<div><i class="flaticon-interview"></i></div>-->
+		        			<!--<div class="num-text">-->
+		        				<!--<div class="num">2</div>-->
+		        				<!--<div class="text">2nd Interviews</div>-->
+		        			<!--</div>-->
+		        		<!--</div>      		-->
+		        		<!--<div class="middle-container">-->
+		        			<!--<div><i class="flaticon-offer"></i></div>-->
+		        			<!--<div class="num-text">-->
+		        				<!--<div class="num">1</div>-->
+		        				<!--<div class="text">Offers</div>-->
+		        			<!--</div>-->
+		        		<!--</div>-->
+
+		        		<!--<div class="middle-container engaged">-->
+		        			<!--<div><i class="flaticon-agreement"></i></div>-->
+		        				<!--<div class="num-text">-->
+		        				<!--<div class="num">0</div>-->
+		        				<!--<div class="text">Engaged</div>-->
+		        			<!--</div>-->
+		        		<!--</div>-->
+
+		        	<!--</div>-->
+		        	<!--<div class="bottom">-->
+		        		<!--<div><i class="far fa-clock"></i>published a month ago</div>-->
+		        		<!--<div><i class="far fa-clock"></i>updated 13 hours ago</div>-->
+		        		<!--<div><i class="fas fa-users"></i>25 candidates interested</div>-->
+		        		<!--<div><i class="fas fa-user-times"></i>25 candidates refused</div>-->
+		        	<!--</div>-->
+		        <!--</div>-->
+
+			</div>
+
+
+<!-- candidates -->
+			<div class="candidate-wrapper">
+		        <!--<div class="candidates-container">-->
+		        	<!--<div class="top">-->
+		        		<!--<div class="name"><span><i class="fas fa-user-alt"></i></span>Alex Zhang-->
+		        					<!--<i class="fas fa-map-marker-alt"></i>-->
+		        				<!--<span class="location">Sydney CBD</span>-->
+
+		        		<!--</div>-->
+		        		<!--<div class="candidate-info"><button type="button">More Info</button></div>-->
+
+		        	<!--</div>-->
+
+		        	<!--<div class="middle">-->
+		        		<!--<div class="image"></div>-->
+		        			<!--<div class="profile-icon"><i class="fas fa-address-card fa fa-2x"></i></div>-->
+		        		<!--<div class="profile">-->
+		        			<!--A fresh graduate of Computer Engineering pursuing a career as a Software developer to ensure that system software functions efficiently.-->
+		        		<!--</div>-->
+		        	<!--</div>-->
+		        	<!--<div class="bottom">-->
+		        		<!--<div><i class="far fa-clock"></i>published a month ago</div>-->
+		        		<!--<div><i class="far fa-clock"></i>updated 13 hours ago</div>-->
+		        		<!---->
+		        	<!--</div>-->
+		        <!--</div>-->
+
+		        <!--<div class="candidates-container">-->
+		        	<!--<div class="top">-->
+		        		<!--<div class="name"><span><i class="fas fa-user-alt"></i></span>John Smith-->
+		        					<!--<i class="fas fa-map-marker-alt"></i>-->
+		        				<!--<span class="location">Sydney CBD</span>-->
+
+		        		<!--</div>-->
+		        		<!--<div class="candidate-info"><button type="button">More Info</button></div>-->
+
+		        	<!--</div>-->
+
+		        	<!--<div class="middle">-->
+		        		<!--<div class="image"></div>-->
+		        			<!--<div class="profile-icon"><i class="fas fa-address-card fa fa-2x"></i></div>-->
+		        		<!--<div class="profile">-->
+		        			<!--A fresh graduate of Computer Engineering pursuing a career as a Software developer to ensure that system software functions efficiently.-->
+		        		<!--</div>-->
+		        	<!--</div>-->
+		        	<!--<div class="bottom">-->
+		        		<!--<div><i class="far fa-clock"></i>published a month ago</div>-->
+		        		<!--<div><i class="far fa-clock"></i>updated 13 hours ago</div>-->
+		        		<!---->
+		        	<!--</div>-->
+		        <!--</div>-->
+
+		        <div class="candidates-container interviews-container">
+		        	<div class="top">
+		        		<div class="name"><span><i class="fas fa-user-alt"></i></span>Alex Zhang
+		        					<i class="fas fa-map-marker-alt"></i>
+		        				<span class="location">Sydney CBD</span>
+
+		        		</div>
+		        		<div class="candidate-info"><button type="button">More Info</button></div>
+
+		        	</div>
+
+		        	<div class="middle">
+		        		<div class="image"></div>
+		        			<div class="profile-icon"><i class="fas fa-address-card fa fa-2x"></i></div>
+		        		<div class="profile">
+		        			A fresh graduate of Computer Engineering pursuing a career as a Software developer to ensure that system software functions efficiently.
+		        		</div>
+		        	</div>
+		        	<div class="bottom">
+		        		<div><i class="far fa-clock"></i>published a month ago</div>
+		        		<div><i class="far fa-clock"></i>updated 13 hours ago</div>
+		        		
+		        	</div>
+		        </div>
+			</div>
+	        </div>
+	 </div>
+	<script type="text/javascript" src="../static/js/header.js"></script>
+	<script type="text/javascript" src="../static/js/employer.js"></script>
+</body>
+
+</html>

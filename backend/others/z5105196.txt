@@ -1,0 +1,72 @@
+COMP9900 Work Diary
+Name: Zhiqin Zhang
+zID: z5105196
+
+Week12:
+Gave a presentation & demo
+Worked on user manual of the report
+
+
+Week11:
+Finished employer and instructor’s functions
+Testing our application, fixed bugs
+Prepared for presentation
+Things to do next week:
+Presentation & report
+
+
+Week10:
+Finally, the backend Finished some APIs. Started to write AJAX requests.
+Finished candidate part, fixed some bugs.
+Things to do next week:
+employer and instructor’s functions
+
+
+Week9:
+Finished coding all pages selectors, prepared to call APIs.
+Things to do next week:
+Connect to the backend
+
+
+Week8:
+Wrote Front-end API calls document, specified what data do I need in each page as well as the data format. Waited for backend APIs. 
+Things to do next week:
+Connect to the backend
+
+
+Week7:
+Finished all the pages
+Styling the pages
+Things to do next week:
+Connect to the backend
+
+Week6:
+Finished the student and search result's pages
+Things to do next week:
+employers, instructors and faculty managers interfaces
+
+Week5:
+Finished login and sign-up pages
+Things to do next week:
+students interface and search result page
+
+Week4:
+Finished the layout design for search page
+Things to do next week:
+sign-up and login pages
+
+Week3:
+Wrote the epics for the proposal 
+One of our teammates left our team
+Things to do next week:
+Start coding Front-end 
+
+Week 2:
+1. Formed a group of 4
+2. Created the Trello & Bitbucket accounts for the team
+3. Discussed 3 topics with the team in the lab,I prefer the second topic
+
+Things to do next week:
+1. Figure out what skills our group members have
+2. Create product backlog
+3. Write project proposal

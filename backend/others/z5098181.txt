@@ -1,0 +1,60 @@
+Work Diary for comp3900
+
+Yang Yang 
+Z5098181
+
+Week12:
+Prepare ppt and demo.
+Put in more testing data.
+Finish report.
+
+Week11:
+Learn how to do API instead of MVC. 
+Look at the code of recommend system and search system and try to understand the logic.
+Prepare report.
+
+Week10:
+Checkout the newest version of database sql functions. Did what I can did for backend. Han started to help me with backend.
+
+Week9:
+Still try to do backend with sorting out functions. I found out some API called is not matched with the functions we have from database.
+
+Week8:
+Version 2 of database has finished by Han. Take a look at newest version and sort out functions. 
+Struggling with backend. Too much functions.
+
+Week7:
+Version 1 of database has finished by Han. Need to take a look and check the functions.
+Sort out functions cause it is too much.
+Check api call document wrote by Alex.
+What to do next week:
+Prepare writing Backend to connect frontend and database.
+
+Week6:
+Learning flask and take a look at the database files.
+Continue managing trello.
+
+Week5:
+Changed structures and add more boards to trello.
+Have a look at ER diagram design.
+What to do next week:
+Learn flask.
+
+Week4:
+Finish proposal.
+Create boards for trello.
+Assign different sprints for this project.
+What to do next week:
+Create boards for trello to manage the project progress.
+
+Week3:
+Doesn't find the 4th teammates. Offical team up for 3 persons. 
+Discuss about ideas of the project and start to write proposal.
+Extend the deadline for proposal.
+What to do next week:
+Create boards for trello to manage the project progress.
+
+Week 2:
+Tried to find another teammate and discussed and chose topic
+What to do next week:
+Write project proposal

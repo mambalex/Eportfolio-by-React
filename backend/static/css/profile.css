@@ -1,0 +1,356 @@
+body {
+    background: rgb(220,220,220);
+}
+
+.container {
+    background: #FFFFFF;
+    width: 640px;
+    height: 520px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, .5);
+}
+
+img{
+    position:absolute;
+    top:-70px;
+    left: 230px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:150px;
+    padding:5px 0 5px 5px;
+}
+
+.alert{
+    position: absolute;
+    top:20px;
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.save {
+    position: absolute;
+    z-index: 3;
+    right: 18px;
+    top: 12px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+
+}
+
+.upload{
+display:none;
+}
+
+#save, #save2{
+    background-color: #66cc99!important;
+    border-color: rgb(48,178,68)!important;
+    color: white;
+    margin-right: 40px;
+    margin-top: 12px;
+    font-size: 14px;
+    text-transform: none;
+}
+
+#save:hover{
+    background-color: rgb(23,150,25)!important;
+}
+#save2:hover{
+    background-color: rgb(23,150,25)!important;
+}
+
+#save span{
+    color: white;
+    font-size: 12px;
+}
+
+
+h1 {
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-left: 9px;}
+/*&:hover {*/
+     /*background: #3FB6A8;*/
+     /*transform: scale(1.1);*/
+ /*}*/
+
+
+.leftbox {
+    float: left;
+    top: -5%;
+    left: 5%;
+    position: absolute;
+    width: 15%;
+    height: 110%;
+    /*background: rgb(59,124,179);*/
+    background: #66cc99;
+    /*box-shadow: 3px 3px 10px rgba(#777777, .5);*/
+}
+
+.leftbox i{
+    font-size: 25px;
+}
+
+
+nav{
+    margin-top: 80px;
+    position:relative;
+}
+
+nav a {
+    list-style: none;
+    padding: 35px;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    display: block;
+    transition: all .3s ease-in-out;}
+
+
+
+.active {
+    color: #337ab7;
+}
+
+.rightbox {
+    float: right;
+    width: 69%;
+    height: 100%;
+}
+
+
+.profile,.settings {
+    transition: opacity .5s ease-in;
+    position: absolute;
+    width: 70%;
+    cursor:pointer;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(48,178,68);
+    font-size: 1.6em;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #777777;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-left: 2px;
+}
+
+p, .password{
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(63, 182, 168), rgba(126, 211, 134,.5)) 1 0%;
+    border-top: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 7px 0;
+    color: #070707;
+}
+
+
+
+
+span {
+    font-size: .5em;
+    color: #777777;
+}
+
+.edit-row{
+    position: relative;
+    width: 80%;
+}
+.update {
+    position:absolute;
+    right: 0;
+    top:10px;
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: none;
+    color: rgb(59,124,179);
+    outline: none;
+}
+
+.change{
+   top:2px;
+}
+
+
+.rightbox .update:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 900;
+    outline: none;
+}
+button{
+    border: none;
+}
+button:focus {outline:0 !important;}
+.rightbox .btn:active {
+    color:rgb(48,178,68);
+    outline:0 !important;}
+
+.fa-user, .material-icons{
+    cursor:pointer;
+}
+
+#privacy{
+    position:relative;
+}
+
+#portrait{
+    position:absolute;
+    font-size:28px;
+    right:36px;
+    bottom:22px
+
+}
+
+
+.privacy h2{
+    margin-top: 25px;
+}
+
+.settings h2{
+    margin-top: 25px;
+}
+
+.noshow {
+    opacity: 0;
+}
+
+
+
+.photo_submit-container {
+  position:relative;
+  display: flex;
+  display:none;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 130px 0 0 40px;
+}
+.photo_submit {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 150px;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+.photo_submit:hover {
+  cursor: pointer;
+  background: #ebebeb;
+}
+.photo_submit:nth-child(2),
+.photo_submit:nth-child(4) {
+  margin-left: 1rem;
+}
+.photo_submit:nth-child(3),
+.photo_submit:nth-child(4) {
+  margin-top: 1rem;
+}
+.photo_submit.photo_submit--image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photo_submit.photo_submit--image:hover {
+  cursor: default;
+}
+.photo_submit-input {
+  display: none !important;
+}
+.photo_submit-plus {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: cadetblue;
+  pointer-events: none;
+}
+.photo_submit-plus:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-46%, -52%);
+          transform: translate(-46%, -52%);
+  content: '+';
+  font-size: 36px;
+  color: #fff;
+}
+.photo_submit--image .photo_submit-plus {
+  display: none;
+}
+.photo_submit-uploadLabel {
+  margin-top: 1rem;
+  font-size: 21px;
+  color: cadetblue;
+  letter-spacing: 0.03em;
+  pointer-events: none;
+}
+.photo_submit--image .photo_submit-uploadLabel {
+  display: none;
+}
+.photo_submit-delete {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.photo_submit-delete:before,
+.photo_submit-delete:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 12px;
+  background-color: cadetblue;
+  content: '';
+}
+.photo_submit-delete:before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.photo_submit-delete:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+.photo_submit-delete:hover {
+  background: #ccc;
+}
+.photo_submit--image .photo_submit-delete {
+  display: inline-block;
+}
+
+
+

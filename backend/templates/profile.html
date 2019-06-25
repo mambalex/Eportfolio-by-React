@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/profile.css">
+</head>
+
+
+<body>
+
+<div class="container">
+    <div class="save basic"><button class="btn btn-primary" id="save"><span class="glyphicon glyphicon-floppy-saved"></span> Save</button>
+    </div>
+    <div class="save upload"><button class="btn btn-primary" id="save2">Upload</button>
+    </div>
+    <div class="leftbox">
+        <nav>
+            <a id="profile" class="active"><i class="fa fa-user"></i></a>
+            <a id="privacy"><i class="material-icons" id="portrait">portrait</i></a>
+        </nav>
+    </div>
+    <div class="rightbox">
+        <div class="profile">
+            <div class="alert alert-success" role="alert" style="display:none;"></div>
+            <div  class="alert alert-danger" role="alert" style="display:none;"></div>
+            <h1>Personal Info</h1>
+            <h2>Full Name</h2>
+            <div class="edit-row"><p class="name"></p><span class="update">update</span></div>
+            <h2>Birthday</h2>
+            <div class="edit-row"><p class="dob"></p><span class="update">update</span></div>
+            <h2>Gender</h2>
+            <div class="edit-row"><p class="gender"></p><span class="update">update</span></div>
+            <h2>Email</h2>
+            <div class="edit-row"><p class="email"></p><span class="update">update</span></div>
+            <h2>Password </h2>
+            <div class="edit-row"><input type="password" class="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
+><span class="update change">change</span></div>
+        </div>
+    </div>
+    <div class="photo_submit-container">
+        <div class="alert alert-success" role="alert" style="display:none;"></div>
+        <div  class="alert alert-danger" role="alert" style="display:none;"></div>
+        <img  src=""  alt="user portrait" >
+        <div class="photo_submit-container">
+            <label class="photo_submit js-photo_submit1">
+                <input class="photo_submit-input js-photo_submit-input" type="file" accept="image/*">
+                <span class="photo_submit-plus"></span>
+                <span class="photo_submit-uploadLabel">Upload photo</span>
+                <span class="photo_submit-delete"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/profile.js"></script>
+
+
+</body>
+</html>

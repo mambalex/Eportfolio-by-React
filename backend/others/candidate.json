@@ -1,0 +1,312 @@
+{
+    "about_me": "I have lots of Python and Java experience.",
+    "code": 200,
+    "course_list": [
+        {
+            "code": "gsoe9820",
+            "name": "engineering project management"
+        },
+        {
+            "code": "comp9900",
+            "name": "information technology project"
+        },
+        {
+            "code": "comp9020",
+            "name": "foundations of computer science"
+        },
+        {
+            "code": "comp9021",
+            "name": "principles of programming"
+        },
+        {
+            "code": "comp9311",
+            "name": "database systems"
+        },
+        {
+            "code": "comp9024",
+            "name": "data structures and algorithms"
+        },
+        {
+            "code": "comp9041",
+            "name": "software construction: techniques and tools"
+        },
+        {
+            "code": "comp9321",
+            "name": "data services engineering"
+        },
+        {
+            "code": "comp9331",
+            "name": "computer networks and applications"
+        },
+        {
+            "code": "comp9334",
+            "name": "system capacity planning"
+        },
+        {
+            "code": "comp6714",
+            "name": "information retrieval and web search"
+        },
+        {
+            "code": "comp9313",
+            "name": "big data management"
+        },
+        {
+            "code": "comp9315",
+            "name": "database systems implementation"
+        },
+        {
+            "code": "comp9318",
+            "name": "data warehousing and data mining"
+        },
+        {
+            "code": "comp9417",
+            "name": "machine learning and data mining"
+        },
+        {
+            "code": "comp9323",
+            "name": "software as a service project"
+        }
+    ],
+    "education_exp": [
+        {
+            "degree": "Master",
+            "education_exp_uuid": "ab180d42-cd5d-11e8-bb98-4c3275989ef5",
+            "major": "IT",
+            "student_id": "candidate1",
+            "time_during": "09/2016-06/2018",
+            "university": "UNSW"
+        },
+        {
+            "degree": "Bachelor",
+            "education_exp_uuid": "81c032c0-cd5e-11e8-a01d-4c3275989ef5",
+            "major": "IT",
+            "student_id": "candidate1",
+            "time_during": "09/2013-06/2016",
+            "university": "UTS"
+        }
+    ],
+    "experiences": [
+        {
+            "description": "Date: 09/2017 - 01/18\nI did some project and task from other company, like an outsourcing.",
+            "exp_type": 0,
+            "link": "http://github.com",
+            "name": "Self employed",
+            "techs": "None",
+            "user_id": "candidate1",
+            "working_exp_uuid": "2beb7078-cdfc-11e8-817c-4c3275989ef5"
+        }
+    ],
+    "interview": [
+        {
+            "company_id": "employer1",
+            "company_name": "Google",
+            "interview_time": "22/10/2018 15:00",
+            "interview_uuid": "dbe24338-cdd6-11e8-96a9-4c3275989ef5",
+            "job_info_id": "3eef2e48-cd62-11e8-9a1a-4c3275989ef5",
+            "job_name": "web developer/programmer",
+            "location": "9-13 Hay St, Haymarket NSW 2000",
+            "status": "First Interview",
+            "student_id": "candidate1"
+        }
+    ],
+    "msg": "Get data success",
+    "personal_info": {
+        "description": "I have lots of Python and Java experience.",
+        "email": "candidate1@gmail.com",
+        "link": "http://github.com",
+        "location": "Sydney",
+        "name": "Alex",
+        "phone": "8888888888",
+        "photo": "None",
+        "role": "candidate",
+        "username": "candidate1"
+    },
+    "project_list": [
+        {
+            "description": "This is a project about website and chatbot",
+            "exp_type": 1,
+            "link": "http://github.com",
+            "name": "COMP9323 Project",
+            "techs": "None",
+            "user_id": "candidate1",
+            "working_exp_uuid": "51d43d08-cd5f-11e8-b912-4c3275989ef5"
+        }
+    ],
+    "recommendation_list": [
+        {
+            "address": "None",
+            "description": "This is a part time job that welcome students who want to learn machine learning",
+            "itskill": [
+                "None"
+            ],
+            "job_info_id": "ee0cb82e-cd61-11e8-b040-4c3275989ef5",
+            "job_name": "ai engineer",
+            "mark": 40,
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "referrer": "System",
+            "responsibility": [
+                "None"
+            ]
+        },
+        {
+            "address": "None",
+            "description": "This is a job that need candidate familiar with machine learning algorithms",
+            "itskill": [
+                "None"
+            ],
+            "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+            "job_name": "ai engineer",
+            "mark": 40,
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "referrer": "System",
+            "responsibility": [
+                "None"
+            ]
+        },
+        {
+            "address": "None",
+            "description": "This is a job that need web developer who familiar with java and python",
+            "itskill": [
+                "None"
+            ],
+            "job_info_id": "3eef2e48-cd62-11e8-9a1a-4c3275989ef5",
+            "job_name": "web developer/programmer",
+            "mark": 20,
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "referrer": "System",
+            "responsibility": [
+                "None"
+            ]
+        },
+        {
+            "address": "None",
+            "description": "This job need a senior backend developer who familiar with java and javascript",
+            "itskill": [
+                "None"
+            ],
+            "job_info_id": "ed575474-cd62-11e8-a63c-4c3275989ef5",
+            "job_name": "web developer/programmer",
+            "mark": 20,
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "referrer": "System",
+            "responsibility": [
+                "None"
+            ]
+        },
+        {
+            "address": "None",
+            "description": "This job need a senior frontend developer who familiar with java and javascript",
+            "itskill": [
+                "None"
+            ],
+            "job_info_id": "f5483ebe-cd62-11e8-9b83-4c3275989ef5",
+            "job_name": "web developer/programmer",
+            "mark": 20,
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "referrer": "System",
+            "responsibility": [
+                "None"
+            ]
+        },
+        {
+            "address": "None",
+            "description": "This job need a senior backend developer who familiar with python and information retrieval",
+            "itskill": [
+                "None"
+            ],
+            "job_info_id": "e4b2b408-cd62-11e8-a2dc-4c3275989ef5",
+            "job_name": "web developer/programmer",
+            "mark": 20,
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "referrer": "System",
+            "responsibility": [
+                "None"
+            ]
+        },
+        {
+            "address": "None",
+            "description": "This job need a senior backend developer who familiar with java and javascript",
+            "itskill": [
+                "None"
+            ],
+            "job_info_id": "8b550dd4-cd62-11e8-b73e-4c3275989ef5",
+            "job_name": "web developer/programmer",
+            "mark": 20,
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "referrer": "System",
+            "responsibility": [
+                "None"
+            ]
+        }
+    ],
+    "role": "candidate",
+    "saved_job_list": [
+        {
+            "address": "None",
+            "company_id": "employer2",
+            "company_name": "Amazon",
+            "description": "This job need a senior backend developer who familiar with python and information retrieval",
+            "itskill": [
+                "None"
+            ],
+            "job_id": "1b8b3d18-dd4c-3948-a570-4e0de39b14dd",
+            "job_info_id": "e4b2b408-cd62-11e8-a2dc-4c3275989ef5",
+            "job_name": "web developer/programmer",
+            "job_type": "full_time",
+            "location": "Sydney",
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "responsibility": [
+                "None"
+            ],
+            "salary": 70000
+        }
+    ],
+    "skill_set": {
+        "c": 70,
+        "c++": 65,
+        "javascript": 75,
+        "machine language": 80,
+        "python": 80
+    },
+    "username": "candidate1"
+}

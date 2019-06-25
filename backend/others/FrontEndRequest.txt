@@ -1,0 +1,170 @@
+
+======================================================student======================================================
+
+student={
+		personalInfo:{},
+		portfolio:{},
+		aboutMe: "xxx",
+		skillSet:{},
+		projects:[],
+		experiences:[],
+		education: [],
+		personalSkills:[],
+		course: [],
+		idealJobs: [],
+		savedJobs=[],
+		rcmdJobs=[]
+}
+
+
+
+//==================personal info==================
+
+personalInfo = {
+				fullname:"Julie", 
+				birthday:"July 21", 
+				gender:"female", 
+				email:"example@example.com",
+				phone: "123",
+				github: "xxx",
+				password:"123456"
+				}
+
+
+////==================portfolio==================
+
+portfolio = {name:"alex", email:"alexzhangzhiqin@gmail.com ", phone:"123", github:"github.com/alex", 
+			photo_path:"../static/img/Selfie.jpg"}
+
+//==================description==================
+
+aboutMe = "A fresh graduate of Computer Engineering pursuing a career as a Software developer to ensure that system software functions efficiently."
+
+//==================skill set==================
+
+skillSet = {HTML: "80%", CSS: "90%", JavaScript: "80%"}
+
+//==================project====================
+
+projects = [  { title: "E-portfolio", 
+				description:"xxx", 
+				link: "https://github.com/mambalex/E-portfolios",
+				techs:["Javascript/Jquery/css", "Django", "PostgreSQL"] 
+			  }, 
+			  { title: "E-portfolio", 
+			    description: "xx"
+			    link: "xx"
+			    techs:[]
+			   }
+			]
+
+//==================experience=================
+
+experiences = [	{ title: "Self-employed", 
+					date: "2018-12-01 till today", 
+					text: "Hondrt.de is a small businesing and programming."
+				},
+				{...},
+				{...}
+			  ]
+
+//==================education==================
+
+education = [
+			{title: "University of New South Wales", date: "2017-2 till 2018-11", degree: "- Master of Information Technology"},
+			{title: "ABC Technological University", date: "2013-7 till 2016-7", degree: "- Bachelor of Technology"},...
+			]
+
+//==================personal skills==================
+
+personalSkills = [
+			"Strong analytical and problem solving skills",
+			"Excellent communication skills: verbal and written",
+			"Disciplined, organized, punctual and caring attitude"
+			]
+
+//==================courses====================
+
+courses = [ {COMP9321: "-Data Services Engineering"}, 
+			{COMP9321: "-Data Services Engineering"} 
+		  ]
+		  
+//==================Jobs=======================
+
+idealJobs=["High salary ", "use python ", "flexible "]
+savedJobs=["Java Development", "Full stack developer", ".Net developer"]
+rcmdJobs=[ {job: "Java Development", referrer: "Michael"}, .. ]
+
+//==================Contact====================
+
+contact = {email: "alexzhangzhiqin@gmail.com", phone: "1223", github: "dfdf"}
+
+
+======================================================Employer======================================================
+
+//==================personal info====================
+
+personalInfo = {fullname:"Julie", birthday:"July 21", gender:"female", email:"example@example.com",password:"123456"}
+
+//======================Opening Jobs=========================
+
+jobs = { 
+		    'Front-End Developer': jobBasicInfo{...},
+			'Back-End Developer': jobBasicInfo{...},
+	   }
+
+jobBasicInfo = {
+				title: "Front-End Developer",
+				salary: "$100k ", 
+				location: "Sydney", 
+				company: "Apple", 
+				workType: "Permanent", 
+				createTime: "2018-4-23",
+				jobSummary: "A market leading organisation is current and further develop your skills.",
+				responsibilities: ["Significant experience...", "Working on Angular", ...],
+				ITSkill: ["Strong web development experience", "React / Redux experience", ...],
+				personalStrengths: ["To be able to work Autonomously", "Disciplined, organized", ...]
+				others = ["Career development and advancement will be continuously", "xxx", ...]
+				}
+
+//==================Saved Candidates==================
+
+
+
+
+candidates = [
+		      student1:{},
+		      studnet2:{}
+			 ]
+
+student={
+		personalInfo:{},
+		portfolio:{},
+		aboutMe: "xxx",
+		skillSet:{},
+		projects:[],
+		experiences:[],
+		education: [],
+		personalSkills:[],
+		course: [],
+		interviewOrNot:'yes'
+}
+
+//==================System recommended Candidates==================
+-same as above
+
+======================================================Instructor======================================================
+
+//==================Saved Jobs==================
+-same as Opening Jobs in employer
+
+//==================Saved Candidates============
+-same as saved candidates in employer
+
+//==================Connections=================
+
+System recommended candidates according to saved jobs
+
+
+
+

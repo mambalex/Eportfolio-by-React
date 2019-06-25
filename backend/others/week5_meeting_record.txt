@@ -1,0 +1,8 @@
+COMP9900 Team 488 Week5 Meeting Record
+20/08/2018
+
+This week we completed ER diagram design, the layout design for search page and the structure of trello.
+Next week:
+Han Zhang will start building and testing the database.
+Yang Yang will manage trello and learn flask.
+Zhiqin Zhang will do sign-up and login pages.

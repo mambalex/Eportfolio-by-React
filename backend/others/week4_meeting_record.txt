@@ -1,0 +1,6 @@
+COMP9900 Team 488 Week4 Meeting Record
+13/08/2018
+
+This week we finished project proposal and submitted it.
+Next week we need to start doing project.
+Han Zhang will do database design, Yang Yang will manage trello and Zhiqin Zhang will start coding Front-end.

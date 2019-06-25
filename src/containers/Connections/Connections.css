@@ -1,0 +1,281 @@
+/*connections-container*/
+
+.connections-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-connections i{
+    float: right;
+    color: rgb(48,188,68);
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.connection-list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+}
+
+.connection-list .connection-item{
+    background-color: white;
+    position: relative;
+    height: 90px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    margin-bottom: 20px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 1, 0.2, 0);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.connection-list .connection-item .can-job-link{
+    display: flex;
+    position: absolute;
+    top:0;
+    justify-content: space-between;
+    /*border:1px solid black;*/
+    width: 100%;
+    height: 100%;
+}
+
+.connection-list .connection-item .can-job-link .title{
+    width: 80%;
+}
+
+.can-job-link>.job,.candidate{
+    width: 45%;
+    display: flex;
+    padding-top: 35px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+
+
+.can-job-link .saved{
+    height: 25px;
+    width: 80px;
+    margin-right: 50px;
+
+}
+.can-job-link .candidate .saved{
+    margin-right: 100px;
+}
+
+.can-job-link .saved button{
+    float: right;
+    background-color: rgb(48,178,68);
+    height:100%;
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+    border-radius: .25rem;
+    cursor: pointer;
+    outline: none !important;
+    border: none;
+    padding: 3px 10px 5px 10px;
+    width: 80px;
+    margin-top: 0;
+
+}
+
+
+.can-job-link>.link{
+    padding-top: 35px;
+    width: 10%;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.26);
+    border-right: 1px solid rgba(0, 0, 0, 0.26);
+}
+.can-job-link>.link i{
+    font-size: 30px;
+    color: rgb(48,178,68);
+}
+
+
+.connection-list .connection-item .close-connection-item{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 25px;
+    color: rgb(48,178,68);
+    cursor: pointer;
+    z-index: 5;
+}
+
+
+
+
+
+
+/*make-connections*/
+
+.make-connections{
+    /*display: flex;*/
+    width:84%;
+    margin-left: 8%;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 1, 0.2, 0);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    z-index: 8;
+}
+
+.make-connections .make-connections-close{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 30px;
+    color: rgb(48,178,68);
+    cursor: pointer;
+}
+.make-connections .target-boxes{
+    margin-top: 80px;
+    height: 150px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.make-connections .target-boxes .arrow{
+    margin-top: 100px;
+    height: 50px;
+}
+
+.make-connections .target-boxes .arrow i{
+    font-size: 30px;
+    color: rgb(48,178,68);
+}
+
+.make-connections .boxes{
+    width: 42%;
+}
+
+.make-connections .boxes .title{
+    text-align: center;
+    font-size:22px;
+    height: 30%;
+}
+.make-connections .box{
+    border: 1px solid black;
+    height: 70%;
+    list-style: none;
+    position: relative;
+}
+
+.make-connections .box  li{
+    width: 99%;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    display: flex;
+    position: absolute;
+    left: 0;
+    top:20px;
+}
+
+.make-connections .box li,::after, ::before{
+    box-sizing: content-box !important;
+}
+
+.make-connections *, ::after, ::before {
+    box-sizing:  content-box !important;
+}
+
+
+.make-connections .box  li>i{
+    position: absolute;
+    top:0;
+    right: 0;
+    color: rgb(48,178,68);
+    cursor: pointer;
+}
+
+.make-connections .box li .title{
+    font-size: 14px;
+    text-align: left;
+    padding:20px 5px 0 20px;
+    width: 70%;
+    overflow: hidden;
+}
+.make-connections .target-boxes .box li .saved{
+    height: 23px;
+    width: 30%;
+    margin-right:10px ;
+}
+.make-connections .target-boxes .box li .saved button{
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+
+.make-connections .recommend{
+    margin-top:30px;
+    text-align: center;
+    height: 30px;
+}
+.make-connections .recommend button{
+    background-color: rgb(48,178,68);
+    height:100%;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: .25rem;
+    cursor: pointer;
+    outline: none !important;
+    border: none;
+    padding: 5px 10px;
+}
+
+.make-connections .recommend button:hover{
+    background-color: rgb(23,150,25);
+}
+
+
+.make-connections .saved-jobs-candidates{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 20px 30px;
+    /*border:1px solid black;*/
+    height: 500px;
+}
+.make-connections .saved-jobs-candidates>.boxes{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+}
+
+.make-connections .saved-jobs-candidates .boxes .title{
+    text-align: center;
+    font-size:22px;
+    height: 66px;
+}
+
+.make-connections  .saved-jobs-candidates .box{
+    border: 1px solid black;
+    height: 100%;
+}
+
+.make-connections .saved-jobs-candidates .box ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.make-connections .saved-jobs-candidates .box ul li{
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    display: flex;
+    cursor: pointer;
+}
+.make-connections .saved-jobs-candidates .box ul li .title{
+    font-size: 14px;
+    text-align: left;
+    padding:20px 5px 0 20px;
+    width: 70%;
+    overflow: hidden;
+}

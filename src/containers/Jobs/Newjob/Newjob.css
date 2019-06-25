@@ -1,0 +1,157 @@
+.new-opening-job{
+    display: flex;
+    position: absolute;
+    /*top: 9%;*/
+    z-index: 9;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 1, 0.2, 0);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    padding-bottom: 50px;
+    background-color: white;
+}
+.new-opening-job .title{
+    height: 70px;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: white;
+    padding: 25px 0 0 20px;
+    position: relative;
+}
+
+.new-opening-job .title .alert{
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+    padding: 15px;
+    width: 250px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.alert-success{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.new-opening-job .title>i{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 30px;
+    color: rgb(48,178,68);
+    cursor: pointer;
+}
+
+.new-opening-job .list{
+    margin: 5px 10px 5px 35px;
+}
+
+.new-opening-job i{
+    margin-right: 10px;
+}
+
+.new-opening-job .left{
+    width: 150px;
+    display: inline-block;
+}
+.new-opening-job .per-year{
+    margin-left: 10px;
+}
+.new-opening-job .salary-location{
+    height: 150px;
+    padding-top: 15px;
+    /*border: 1px solid black;*/
+    position: relative;
+    background-color: rgb(239,241,241);
+}
+
+.new-opening-job .create-job{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    margin-right: 20px;
+    width: 120px;
+    height: 40px;
+}
+.new-opening-job .create-job button{
+    background-color: rgb(48,178,68);
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: .25rem;
+    font-weight: 400;
+    font-size: 15px;
+    outline: none !important;
+    border: none;
+    cursor: pointer;
+}
+
+.new-opening-job .create-job button:hover{
+    background-color: rgb(23,150,25);
+}
+
+
+.new-opening-job .job-summary,.job-responsibilities,.skills-required-title,.personal-skills-title,.others-title{
+    background-color: white;
+    padding:10px 0 0 40px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.new-opening-job .description,.responsibilities,.skills-required,.personal-skills,.others{
+    background-color: white;
+    margin-left: 50px;
+    padding-right: 40px;
+}
+
+
+.new-opening-job input{
+    width: 500px;
+    height: 25px;
+}
+
+.new-opening-job .salary-location input{
+    width: 200px;
+    height: 20px;
+}
+.new-opening-job .add-job-summary{
+    margin: 20px 100px;
+    width: 600px;
+    height: 100px;
+}
+
+.new-opening-job ul li{
+    position:relative;
+    margin-bottom: 10px;
+}
+.new-opening-job ul li .remove{
+    position: absolute;
+    top:5px;
+    right: 300px;
+    color: #dc3545;
+    cursor: pointer;
+}
+.new-opening-job ul li button{
+    background-color: rgb(48,178,68);
+    color: white;
+    width: 50px;
+    height: 25px;
+    margin-left: 20px;
+    border-radius: .25rem;
+    font-weight: 400;
+    font-size: 15px;
+    outline: none !important;
+    border: none;
+    cursor: pointer;
+}
+

@@ -1,0 +1,54 @@
+COMP9900 Work Diary
+Name: Han Zhang
+zID: z5043158
+
+Week12:
+Finish and fixed bugs, prepare demo
+
+Week11:
+Finished all part and integration function
+Next week: Finish report
+
+Week10:
+Finished analyze relation
+Working on backend
+
+Week9:
+Finished recommendation system.
+Analyze relation between courses, job_titles and skills.
+
+Week8:
+Finished database functions, working on recommendation system.
+Continue working on recommendation system.
+
+Week7:
+Finished most function of database.
+Continue working on backend.
+
+Week6:
+Writing SQL to support backend.
+Continue working on backend.
+
+Week5:
+Database setup completed.
+Things to do next week:
+Prepare to start backend work.
+
+Week4:
+Completed ER diagram design.
+Things to do next week:
+Prepare to start building and testing the database.
+
+Week3:
+Finished technical part of proposal.
+Things to do next week:
+Prepare to start database design.
+
+Week 2:
+
+1. Formed a group of 4
+
+Things to do next week:
+1. Figure out what skills our group members have
+2. Create product backlog
+3. Write project proposal

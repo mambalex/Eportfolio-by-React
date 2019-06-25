@@ -1,0 +1,10 @@
+COMP9900 Team 488 Week8 Meeting Record
+10/09/2018
+
+This week we finished all database functions and all user interfaces.
+We found that we need a recommendation system to provide some suggestion for student and employer.
+We decided use NLP to build a recommendation system.
+Next week:
+Han Zhang will code recommendation system.
+Yang Yang will continue code backend.
+Zhiqin Zhang will adjust page structure。

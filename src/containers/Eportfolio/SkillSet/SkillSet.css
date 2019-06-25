@@ -1,0 +1,160 @@
+
+/*skill-set*/
+
+
+.skill-set{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background-color: white;
+}
+
+.skill-set .title{
+    /*border: 1px solid black;*/
+    height: 60px;
+    background: #66cc99;
+    /*background: rgb(47,47,47);*/
+    letter-spacing: 0.1em;
+    font-family: Arial;
+}
+
+.skill-set h2{
+    padding-top: 2%;
+    height: 100%;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.skill-set .bottom{
+    /*border: 2px solid black;*/
+    border-top: none;
+    position:relative;
+}
+
+
+.skill-set .skills{
+    /*border: 1px solid black;*/
+    margin-top: 2%;
+    margin-left: 20%;
+    display: inline-block;
+    width: 70%;
+}
+
+
+
+.skill-set .skills li{
+    width: 70%;
+    list-style: initial;
+    margin-left: 0;
+    margin-right: 20%;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+}
+
+.skill-set .skills li .text{
+    width:100%;
+
+}
+
+.skill-set .skills i{
+    margin-left: 15%;
+    margin-top: 4px;
+}
+
+.skill-set .skill-form{
+    text-align: center;
+    margin: 3% 5%;
+}
+
+
+
+.skill-set  input{
+    width: 30%;
+    height: 20px;
+    margin-left: 60px;
+    margin-right: 30px;
+    display:inline-block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s
+}
+
+.skill-set  #percentage{
+    width: 30%;
+    height: 20px;
+    display:inline-block;
+}
+
+.skill-set  .add{
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: .25rem;
+    padding: 6px 12px;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-style: none;
+}
+.skill-set button:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.skill-set .update{
+    position: absolute;
+    top:20px;
+}
+
+
+#course-title-input,#course-name-input{
+    width:50%;
+}
+
+.skill-set .courses-wrapper .courses{
+    margin: 5% 0 5% 5%;
+}
+.skill-set .courses-wrapper .course .wrapper{
+    display: flex;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.skill-set .courses-wrapper .course .wrapper .course-title{
+    width: 25%;
+    /*border: 1px solid black;*/
+}
+.skill-set .courses-wrapper .course .wrapper .text{
+    width: 65%;
+    /*border: 1px solid black;*/
+}
+
+::-webkit-input-placeholder {
+    color: #808080;
+    text-align: center;
+    font-size: 13px;
+}
+
+.skill-set i, .jobs i {
+    color: rgb(48, 178, 68);
+}
+
+.skill-set i:hover, .jobs i:hover {
+    cursor: pointer;
+}

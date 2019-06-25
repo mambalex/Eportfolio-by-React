@@ -1,0 +1,259 @@
+/*projects*/
+
+.projects{
+    width: 100%;
+    margin-bottom: 50px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background-color: white;
+    position:relative;
+
+}
+
+.prj-add{
+    position: absolute;
+    right: -70px;
+    top: -40px;
+    color: rgb(48,188,68);
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.prj-edit{
+    color: rgb(48,188,68);
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+
+.prj-delete{
+    color: rgb(48,188,68);
+    position:absolute;
+    right:20px;
+    bottom:50px;
+}
+
+
+
+
+
+
+
+.projects>.title{
+    /*border: 1px solid black;*/
+    height: 60px;
+    width: 100%;
+    background: #66cc99;
+    /*background: rgb(47,47,47);*/
+    letter-spacing: 0.05em;
+    font-family: Arial;
+}
+
+.project>.title:empty:before {
+    content:attr(data-placeholder);
+    color:rgb(200,200,200);
+}
+
+.project>.description:empty:before {
+    content:attr(data-placeholder);
+    color:rgb(200,200,200);
+}
+.project li:empty:before {
+    content:attr(data-placeholder);
+    color:rgb(200,200,200);
+}
+.project .url:empty:before {
+    content:attr(data-placeholder);
+    color:rgb(200,200,200);
+}
+
+
+.projects h2{
+    padding-top: 3%;
+    height: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+.projects .project{
+    width: 100%;
+    /*border: 2px solid black;*/
+    border-bottom: 1px solid rgb(200,200,200);
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+.projects .project .description{
+    margin:0 80px;
+    font-weight: 400;
+    height:100px;
+
+}
+
+.projects .project .des{
+    margin-left: 6%;
+    height:100px;
+    width:88%;
+}
+
+.projects .project .title{
+    font-size: 20px;
+    margin:20px 80px 15px 6%;
+    font-weight: 700;
+    position:relative;
+}
+
+.projects .project  i{
+    position:absolute;
+    bottom:40px;
+    right:40px;
+    color: #d43f3a;
+    cursor: pointer;
+    /*font-size: 26px;*/
+}
+
+.projects .project  i:hover{
+    color: #ac2925;
+}
+
+
+.projects .project .tech{
+    margin-top: 30px;
+    margin-right:80px;
+    position:relative;
+}
+
+.projects .project .tech-input{
+    width: 100%;
+    height: 30px;
+    margin: 5% 0;
+}
+
+.projects .project .url-input{
+    width: 70%;
+    height: 30px;
+    margin: 5% 0 5% 15%;
+}
+
+.tech-name {
+    position: absolute;
+    left: -135px;
+    width: 80%;
+    bottom: 5px;
+}
+
+.projects .project .tech li{
+    position:relative;
+    margin-bottom:2px;
+    height:30px;
+
+}
+
+
+.projects .project .tech-title, .link-title{
+    margin-left: 7%;
+    font-weight: 700;
+}
+
+.projects .project .text{
+    margin-left: 20%;
+    font-weight: 400;
+    position:relative;
+}
+.projects .project .text div{
+    margin-left: 35%;
+}
+.projects .project .link .url{
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    margin-right:80px;
+    height:30px;
+}
+.projects .project .link a{
+    text-decoration: none;
+    width:100%;
+    height:100%;
+}
+
+.tech-add {
+    cursor: pointer;
+    color: rgb(48,178,68);
+    position: absolute;
+    right: -60px;
+    top: -10px;
+}
+
+.tech-delete{
+    cursor: pointer;
+    color: rgb(48,178,68);
+    position: absolute;
+    right: -60px;
+    top:0;
+}
+
+.projects .new-pro-btn{
+    margin: 30px 0 50px 0;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects .new-pro-btn .add{
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .355rem 1.3rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    cursor: pointer;
+}
+
+.projects .new-pro-btn .add:hover, .projects .new-pro-btn .add:focus{
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+    text-decoration: none;
+}
+
+.projects .new-pro-btn .cancel{
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .355rem .6rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s;
+    color: #fff;
+    background-color: #d43f3a;
+    cursor: pointer;
+    /*font-size: 26px;*/
+}
+
+.projects .project  .cancel:hover{
+    background-color: #ac2925;
+}
+

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous">
+	</script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!--<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>-->
+	<link rel="stylesheet" type="text/css" href="../static/css/font/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/header.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/result.css">
+</head>
+<body>
+
+<div class="main-container">
+			<nav class="header">
+                <div class="home">
+                    <a href="main-page.html">Home</a>
+                </div>
+				<div class="welcome-user">
+					Welcome, John
+				</div>
+                <div class="user">
+                    <i class="fas fa-user-alt"></i>
+                    <div class="dropdown-content">
+                        <a href="./profile" id='profile'>My Profile</a>
+                        <a href="./" id='logout'>Logout</a>
+                    </div>
+                </div>
+            </nav>
+
+	        <div class="result">
+	        	<div class="left"> 
+
+	        		<div class="tags cnt">
+						<p><i class="fas fa-tags"></i>Tags</p>
+	        			<ul id="all-tags">
+	        				<!--<li>C#</li>-->
+	        				<!--<li>Java</li>-->
+	        				<!--<li>Python</li>-->
+	        				<!--<li>.Net</li>-->
+	        				<!--<li>Angular</li>-->
+	        				<!--<li>React</li>-->
+	        				<!--<li>Django</li>-->
+	        				<!--<li>NoSQL</li>-->
+	        			</ul>
+	        		</div>
+	        		<div class="job-type cnt">
+	        			<div class="left-title"><p>Job Type</p></div>
+	        			<ul id="workType">
+	        				<!--<li>Full time</li>-->
+	        				<!--<li>Part time</li>-->
+	        				<!--<li>Contract/Temp</li>-->
+	        				<!--<li>Casual/Vacation</li>-->
+	        			</ul>
+
+	        		</div>
+					<div class="salary cnt">
+						<div class="left-title"><p>Salary</p></div>
+						<div class="text"><span id="salary"></span> / year</div>
+					</div>
+					<div class="location cnt">
+						<div class="left-title"><p>Locations</p></div>
+						<ul id="lct">
+							<!--<li>Sydney</li>-->
+							<!--<li>Melbourne</li>-->
+						</ul>
+					</div>
+	        	</div>
+	        	<div class="right">
+<!-- job-popup -->
+						<div class="job-popup">
+		        	<div class="title">
+		        		<span>Front-End Developer</span>
+		        		<i class="fas fa-backspace job-popup-close"></i>
+						<div id="successAlert" class="alert alert-success longin-alert" role="alert" style="display:none;">Successfully saved this job!</div>
+				   		<div id="errorAlert" class="alert alert-danger longin-alert" role="alert" style="display:none;">Oops! Something went wrong.</div>
+		        	</div>
+		        	<div class="salary-location">
+		        		<div class="salary list">
+		        			<i class="flaticon-money"></i>
+		        			<span class="left">Salary:</span>
+		        			<span id="salary2">$100k </span>
+		        			<span class="per-year">per year</span>
+		        		</div>
+		        		<div class="location list">
+		        			<i class="flaticon-pin"></i>
+		        			<span class="left">Location:</span>
+		        			<span id="lct2">Sydney</span>
+		        		</div>
+		        		<div class="company list">
+		        			<i class="flaticon-branch"></i>
+		        			<span class="left">Company:</span>
+		        			<span id="company">Apple</span>
+		        		</div>
+		        		<div class="work-type list">
+		        			<i class="flaticon-bag"></i>
+		        			<span class="left">Work Type:</span>
+		        			<span id="work-type">Permanent</span>
+		        		</div>
+						<div class="id"></div>
+		        		<div class="save-job"><button type="button">Save this job</button></div>
+		        	</div>
+		        	<div class="job-summary">Job Summary:</div>
+		        	<div class="description">
+		        		<p>A market leading organisation is currently seeking a Front-End developer to work on exciting and engaging projects.You will have at least 2 years Web Development experience and the drive to continuously learn and further develop your skills.</p>
+		        	</div>
+		        	<div class="job-responsibilities">Responsibilities:</div>
+		        	<div class="responsibilities">
+		        		<ul>
+		        			<li>Significant experience with UI Design and Development </li>
+		        			<li>Working on Angular 4 or 5 frameworks</li>
+		        			<li>Demonstrated ability (portfolio) in producing high quality web and mobile user interfaces</li>
+		        			<li>Proficient in creating interactive wireframes, prototypes, storyboards and userflows</li>
+		        			<li>Hands on experience working within Agile project teams</li>
+		        		</ul>
+		        	</div>
+		        	<div class="skills-required-title">Software and IT Skills Required:</div>
+		        	<div class="skills-required">
+		        		<ul>
+		        			<li> Strong web development experience (Javascript / HTML5, CSS) </li>
+		        			<li>Responsive design experience</li>
+		        			<li>   React / Redux experience</li>
+		        			<li> Possession of online portfolio presenting range of work up to date, e.g. in GitHub</li>
+		        		</ul>
+		        	</div>
+		        	<div class="personal-skills-title">Personal Attributes and Strengths:</div>
+		        	<div class="personal-skills">
+		        		<ul>
+		        			<li> To be able to work Autonomously</li>
+		        			<li>Service oriented and passionate about helping clients</li>
+		        			<li>Strong analytical and problem solving skills</li>
+		        			<li>Disciplined, organized, punctual and caring attitude</li>
+		        			<li>Excellent communication skills – verbal and written</li>
+		        		</ul>
+		        	</div>
+		        	<div class="others-title">Others</div>
+		        	<div class="others">
+		        		<p>Career development and advancement will be continuously on offer within this ever growing organisation!</p>
+		        	</div>
+				</div>
+
+<!--candidates-popup-->
+                <div class="candidate-popup">
+                    <div class="top">
+                        <div class="name">Alex Zhang</div>
+                        <div class="top-contact">
+
+                            <div class="bottom">
+                                <div class="contact-l">
+                                    <div class="contact-icon"><i class="far fa-envelope"></i></div>
+                                    <div class="text">Email:</div>
+                                    <div class="email">alexzhangzhiqin@gmail.com</div></div>
+                                <div class="contact-l">
+                                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                                    <div class="text">Phone:</div>
+                                    <div class="phone">1223</div></div>
+                                <div class="contact-l">
+                                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                                    <div class="text">Github:</div>
+                                    <div class="github">dfdf</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img  src="../static/img/default.png" class="img-popup" alt="user portrait" >
+                    </div>
+                    <div class="bottom">
+                        <div class="about-me">
+                            <div class="line-text">
+								<div id="successAlert2" class="alert alert-success longin-alert" role="alert" style="display:none;">Successfully saved this candidate!</div>
+				   		<div id="errorAlert2" class="alert alert-danger longin-alert" role="alert" style="display:none;">Oops! something went wrong!</div>
+                                <div class="text">About Me</div>
+								<div class="id"></div>
+                                <div class="save-can"><button type="button">Save</button></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="profile edit">
+                                <p>A fresh graduate of Computer Engineering pursuing a career as a Software developer to ensure that system software functions efficiently.</p>
+                            </div>
+
+                        </div>
+                        <div class="home-tech-skills">
+                            <div class="line-text">
+                                <div class="text">Technical Skills</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="skill-lists">
+                                <ul>
+                                    <li>
+	        							<a href="">HTML</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">80%</div>
+	        							</div>
+
+	        						</li>
+	        						<li>
+	        							<a href="">CSS</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">90%</div>
+	        							</div>
+
+	        						</li>
+	        						<li>
+	        							<a href="">JavaScript</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">80%</div>
+	        							</div>
+
+	        						</li>
+	        						<li>
+	        							<a href="">Python</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">60%</div>
+	        							</div>
+
+
+	        						</li>
+	        						<li>
+	        							<a href="">AWS</a>
+	        							<div class="percentage"><div class="left"></div>
+	        							<div class="perct">50%</div>
+	        							</div>
+
+	        						</li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <div class="home-projects">
+                            <div class="line-text">
+                                <div class="text">Projects</div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="bottom">
+                                <ul>
+                                    <li><a href="">E-portfolio</a></li>
+                                    <li><a href="">Linear SVC</a></li>
+                                    <li><a href="">Computer Networks and Applications</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="home-experience">
+                            <div class="line-text">
+                                <div class="text">Experience</div>
+                                <div class="line"></div>
+                            </div>
+                            <ul class="all-experience">
+                                <li class="experience">
+                                    <div class="title" data-placeholder='Please enter a title'>
+                                        Self-employed
+                                    </div>
+                                    <div class="date" data-placeholder='Please enter a date'>2018-12-01 till today</div>
+                                    <div class="text">
+                                        <p>Hondrt.de is a small business enterprise (dt. Kleingewerbe) specializing in serving technical needs of local customers. For example building corporate homepages, technical consulting and programming.</p>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="home-education">
+                            <div class="line-text">
+                                <div class="text">Education</div>
+                                <div class="line"></div>
+                            </div>
+                            <ul class="all-edu">
+                                <li class="edu">
+                                    <div class="title">University of New South Wales</div>
+                                    <div class="date">2017-2 till 2018-11</div>
+                                    <div class="degree">- Master of Information Technology</div>
+                                </li>
+                                <li class="edu">
+                                    <div class="title">ABC Technological University</div>
+                                    <div class="date">2013-7 till 2016-7</div>
+                                    <div class="degree">- Bachelor of Technology</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="personal-skill">
+	        				<div class="line-text">
+	        					<div class="text">Personal Skills</div>
+	        					<div class="line"></div>
+	        				</div>
+	        				<ul>
+		        				<li class="ps">
+									<span>Strong analytical and problem solving skills</span>
+		        				</li>
+		        				<li class="ps">
+									<span>Excellent communication skills: verbal and written</span>
+		        				</li>
+								<li class="ps">
+									<span>Disciplined, organized, punctual and caring attitude</span>
+								</li>
+	        				</ul>
+	        			</div>
+                    </div>
+                </div>
+					<div class="right-container">
+<!--job-list-->
+						<ul class="job-list">
+							<li class="job">
+								<p class="title">Java Developer</p>
+								<div class="description">Application development, maintaining existing systems, post implementation support, unit testing, release management, design and building databases, identifying and solving production issues, problem solving.</div>
+							</li>
+
+							<li class="job">
+								<p class="title">Senior Full Stack Developer</p>
+								<div class="description">Work within a cross-functional team developing new products and maintaining existing platforms.
+								Senior Developers will help mentor and shape Junior to Intermediate developers – not a lot of hand-holding given but you will be there to support/ code review.
+								</div>
+
+							</li>
+							<li class="job">
+								<p class="title">Python Fullstack Developer</p>
+								<div class="description">Strong commercial experience in BOTH Front-End and Back-EndStrong OOP and Design Patterns Angular/React Python/ Django, Exposure to large-scale projects, Outstanding Stakeholder management
+								</div>
+
+							</li>
+						</ul>
+<!--candidates list-->
+						<ul class="can-list">
+								<li class="can">
+									<p class="title">Alex Zhang</p>
+									<div class="description">A fresh graduate of Computer Engineering pursuing a career as a Software 							developer to ensure that system software functions efficiently.</div>
+								</li>
+
+								<li class="can">
+									<p class="title">John Smith</p>
+									<div class="description">A fresh graduate of Computer Engineering pursuing a career as a Software 								developer to ensure that system software functions efficiently.
+									</div>
+
+								</li>
+               			 </ul>
+	        		</div>
+	        	</div>
+	        </div>
+
+
+
+
+                
+
+</div>
+<script type="text/javascript" src="../static/js/header.js"></script>
+<script type="text/javascript" src="../static/js/result.js"></script>
+</body>
+</html>

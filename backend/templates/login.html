@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel="stylesheet" type="text/css" href="../static/css/login-signup.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+			<div class="container">
+				<div class="backbox">
+					<div class="loginMsg">
+						<div class="textcontent">
+							<p class="title">Don't have an account?</p>
+							<p>Sign up to start your journey.</p>
+							<button id="switch1">Sign Up</button>
+						</div>
+					</div>
+					<div class="signupMsg visibility">
+						<div class="textcontent">
+							<p class="title">Have an account?</p>
+							<p>Log in to see all your collection.</p>
+							<button id="switch2">LOG IN</button>
+						</div>
+					</div>
+				</div>
+				<!-- backbox -->
+
+				<div class="frontbox">
+					<form class="login">
+						<h2>LOG IN</h2>
+						<div class="inputbox">
+							<div class="input-icon">
+								<i class="fas fa-user"></i>
+								<input type="text" name="email" id="login-username" placeholder="USERNAME">
+							</div>
+							<div class="input-icon">
+								<i class="fas fa-lock"></i>
+								<input type="password" name="password" id="login-password" placeholder="PASSWORD">
+							</div>
+						</div>
+						<!--<p>FORGET PASSWORD?</p>-->
+						<button type="submit">LOG IN</button>
+						 <div id="successAlert" class="alert alert-success longin-alert" role="alert" style="display:none;"></div>
+          				<div id="errorAlert" class="alert alert-danger longin-alert" role="alert" style="display:none;"></div>
+					</form>
+
+					<form class="signup hide">
+						<h2>SIGN UP</h2>
+						<div class="inputbox">
+							<div class="input-icon">
+								<i class="fas fa-user-alt"></i>
+								<input type="text" id='signup-username' name="fullname" placeholder="USERNAME">
+							</div>
+							<div class="input-icon">
+								<i class="fas fa-envelope"></i>
+								<input type="text" id='signup-email' name="email" placeholder="EMAIL">
+							</div>
+							<div class="input-icon">
+								<i class="fas fa-lock"></i>
+								<input type="password" id='signup-password' name="password" placeholder="PASSWORD">
+							</div>
+							<select name="user-type" id="user-type" placeholder="USER TYPE" >
+								<option value=""hidden>USER TYPE</option>
+								<option value="candidate">CANDIDATE</option>
+								<option value="employer">EMPLOYER</option>
+								<option value="instructor">INSTRUCTOR</option>
+							</select>
+						</div>
+						<button id='signup-btn' type="submit">SIGN UP</button>
+						<div id="successAlert2" class="alert alert-success signup-alert" role="alert" style="display:none;"></div>
+						<div id="errorAlert2" class="alert alert-danger signup-alert" role="alert" style="display:none;"></div>
+
+					</form>
+					</div>
+			</div>
+			<script type="text/javascript" src="../static/js/login-signup.js"></script>
+
+</body>
+</html>
+

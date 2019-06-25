@@ -1,0 +1,5 @@
+COMP9900 Team 488 Week9 Meeting Record
+17/09/2018
+
+This week we finished recommendation system and some backend API.
+Next week Han Zhang will analyze relation between courses, job_titles and skills, Yang Yang will continue write backend and Zhiqin Zhang will start connect to backend.

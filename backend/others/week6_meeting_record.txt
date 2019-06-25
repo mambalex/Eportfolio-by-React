@@ -1,0 +1,6 @@
+COMP9900 Team 488 Week6 Meeting Record
+27/08/2018
+
+This week we finished Database setup and login and sign-up pages.
+The project is currently in good progress。
+Next week Han Zhang and Yang Yang will write SQL to support backend, Zhiqin Zhang will code students interface and search result page.

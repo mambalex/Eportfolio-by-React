@@ -1,0 +1,72 @@
+/*contact*/
+
+.contact{
+    width: 100%;
+    margin-bottom: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background-color: white;
+}
+
+.contact .title{
+    height: 60px;
+    width: 100%;
+    background: #66cc99;
+    /*background: rgb(47,47,47);*/
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding-bottom: 10px;
+    /*	font-family: Arial;*/
+}
+
+.contact .title h2{
+    padding-top: 3%;
+    height: 100%;
+    text-align: center;
+    margin-top: 0;
+    font-weight:400 !important;
+}
+
+.contact .bottom{
+    width: 100%;
+    border-top: none;
+    margin: 30px 0;
+}
+
+.contact .bottom .contact-l{
+    margin: 2% 16%;
+    padding-right: 40px;
+    display: flex;
+}
+
+.contact .bottom .contact-l .text{
+    display: inline-block;
+    width: 150px;
+}
+
+.contact .bottom .contact-icon{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contact .bottom .text,.text-2,.edit{
+    display: inline-block;
+}
+.contact .bottom .text-2{
+    width: 400px;
+    font-size: 15px;
+}
+
+.contact .bottom .edit i{
+    cursor: pointer;
+    color:rgb(48,178,68);
+}
+
+
+
+
+
+

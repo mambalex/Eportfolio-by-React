@@ -1,0 +1,192 @@
+.connections-container .make-connections{
+    display: flex;
+    height: 450px;
+    width:84%;
+    margin-left: 8%;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 1, 0.2, 0);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    z-index: 8;
+}
+
+.connections-container .make-connections .make-connections-close{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 30px;
+    color: rgb(48,178,68);
+    cursor: pointer;
+}
+.connections-container .make-connections .target-boxes{
+    margin-top: 80px;
+    height: 150px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connections-container .make-connections .target-boxes .arrow{
+    margin-top: 100px;
+    height: 50px;
+}
+
+.connections-container .make-connections .target-boxes .arrow i{
+    font-size: 30px;
+    color: rgb(48,178,68);
+}
+
+.connections-container .make-connections .boxes{
+    width: 42%;
+}
+
+.connections-container .make-connections .boxes .title{
+    text-align: center;
+    font-size:22px;
+    height: 30%;
+}
+.connections-container .make-connections .box{
+    /*border: 1px solid black;*/
+    height: 70%;
+    list-style: none;
+    position: relative;
+}
+
+.connections-container .make-connections .box  li{
+    width: 99%;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    display: flex;
+    position: absolute;
+    left: 0;
+    top:20px;
+}
+
+.connections-container .make-connections .box li,::after, ::before{
+    box-sizing: content-box !important;
+}
+
+.make-connections *, ::after, ::before {
+    box-sizing:  content-box !important;
+}
+
+
+.connections-container .make-connections .box  li>i{
+    position: absolute;
+    top:0;
+    right: 0;
+    color: rgb(48,178,68);
+    cursor: pointer;
+}
+
+.connections-container .make-connections .box li .title{
+    font-size: 14px;
+    text-align: left;
+    padding:20px 5px 0 20px;
+    width: 70%;
+    overflow: hidden;
+}
+.connections-container .make-connections .target-boxes .box li .saved{
+    height: 23px;
+    width: 30%;
+    margin-right:10px ;
+}
+.connections-container .make-connections .target-boxes .box li .saved button{
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+
+.connections-container .make-connections .recommend{
+    margin-top:30px;
+    text-align: center;
+    height: 30px;
+}
+.connections-container .make-connections .recommend button{
+    background-color: rgb(48,178,68);
+    height:100%;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: .25rem;
+    cursor: pointer;
+    outline: none !important;
+    border: none;
+    padding: 5px 10px;
+}
+
+.connections-container .make-connections .recommend button:hover{
+    background-color: rgb(23,150,25);
+}
+
+
+.connections-container .make-connections .saved-jobs-candidates{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 20px 30px;
+    /*border:1px solid black;*/
+    height: 500px;
+}
+.connections-container .make-connections .saved-jobs-candidates>.boxes{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.connections-container .make-connections  .saved-jobs-candidates .box{
+    /*border: 1px solid black;*/
+    height: 100%;
+    padding-top:15px;
+}
+
+.box .saved-jobs-con, .box .saved-can-con{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.drag-job, .drag-candidate{
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.drag-job .titles, .drag-candidate .titles{
+    font-size: 14px;
+    text-align: left;
+    padding: 20px 5px 0 20px;
+    width: 70%;
+    overflow: hidden;
+}
+
+
+.drag-job button, .drag-candidate button {
+    float: right;
+    background-color: rgb(48,178,68);
+    height: 13px;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: .25rem;
+    cursor: pointer;
+    outline: none !important;
+    border: none;
+    padding: 5px;
+    margin-top: 18px;
+    margin-right: 12px;
+}
+
+.box select{
+    width: 80%;
+    margin: 10%;
+    height: 40%;
+    font-size: 16px;
+}

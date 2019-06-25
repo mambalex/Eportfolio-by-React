@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+  	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../static/css/main-page.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<!-- <link rel="stylesheet" type="text/css" href="shadow.css"> -->
+
+</head>
+<body>
+
+	          <div class="main-container">
+	          	 	<nav>
+				          	<div>
+				          		<ul>
+				          			<li><a href="login.html" class='login-signup'>Login</a></li><!--
+				          			 --><li><a href="login.html" class='login-signup'>Sign Up</a></li>
+				          		</ul>
+				          	</div>
+	          		</nav>
+
+	          		<div class="img">
+	          			<img src="../static/img/p5.jpeg">
+	          		</div>
+	          		<div class="text"></div>
+	          		<div class="search-bar-container">
+	          			<div class="title"><h2>Find A Job You Love</h2></div>
+	 					<div class="search-bar">
+	 						<form class="search" action="">
+	 								<div class="input-wrapper">
+  										<input type="search" name="keyword" placeholder="Search jobs here..." ><!--
+  										 --><input type="search" name="location" placeholder="Location" >
+
+  									</div>
+  									<div class="plus-minus"><i class="fas fa-plus plus"></i><i class="fas fa-minus minus"></i></div>
+  									<div class="tags">
+  										<div class="tag">
+  											<div class="title">Tags:</div>
+  											<!-- <input type="text" name="" class="all-tags"> -->
+
+  											<div class="all-tags">
+  												  <ul class="tag-labels">
+												    <!--<li class="tg">leadership <span class="x">x</span></li>-->
+												    <!--<li><span class="tg">Java</span>  <span class="x">x</span></li>-->
+												  </ul>
+  											</div>
+  										</div>
+  										
+  										<div class="wrapper">
+		  									<div class="left">
+		  										<div>
+		  											<input type="text" name="tags" placeholder="tags" class="job-tag">
+		  											<select id="lang">
+														<option value="" selected disabled hidden>Language</option>
+		  												<option value="Java">Java</option>
+		  												<option value="C#">C#</option>
+		  												<option value="sql">SQL</option>
+		  												<option value="hadoop">Hadoop</option>
+		  												<option value="others">Others</option>
+		  											</select>
+		  										</div>
+		  										<div class="lb">
+		  											<button class="plus-tag"><i class="fas fa-plus"></i></button>
+		  										</div>
+
+		  									</div>
+
+		  									<div class="right">
+
+		  									<select id="salaries">
+	  											<option value="" selected disabled hidden>Salaries</option>
+	  											<option value="50k-">50k-</option>
+	  											<option value="50-60k">50-60k</option>
+	  											<option value="60-70k">60-70k</option>
+	  											<option value="70-80K">70-80K</option>
+	  											<option value="80-90K">80-90K</option>
+	  											<option value="90-100K">90-100K</option>
+	  											<option value="100K+">100K+</option>
+	  										</select>
+
+
+  										<select id="workType">
+  											<option value="" selected disabled hidden>Job Types</option>
+  											<option value="Full-time">Full-time</option>
+  											<option value="Part-time">Part-time</option>
+  											<option value="Contract/Temp">Contract/Temp</option>
+  											<option value="Casual/Vacation">Casual/Vacation</option>
+  										</select>
+  										</div>
+
+
+		  							</div>
+  									</div>
+									<button  id='search'>Search</button>
+							</form>
+
+
+							<form class="search-candidate">
+								<div class="input-wrapper">
+									<input type="search" name="candidate" placeholder="Search candidates here..." ><!--
+  										 --><input type="search" name="location" placeholder="Location" r>
+
+								</div>
+								<div class="can-plus-minus"><i class="fas fa-plus plus"></i><i class="fas fa-minus minus"></i></div>
+								<div class="tags">
+									<div class="tag">
+										<div class="title">Tags:</div>
+										<!-- <input type="text" name="" class="all-tags"> -->
+
+										<div class="all-can-tags">
+											<ul class="can-labels">
+												<!--<li><span class="tg">leadership</span> <span class="x">x</span></li>-->
+												<!--<li><span class="tg">Java</span>  <span class="x">x</span></li>-->
+											</ul>
+										</div>
+									</div>
+
+									<div class="wrapper">
+										<div class="left">
+											<div>
+												<input type="text" name="tags" placeholder="tags" class="candidate-tag">
+												<select id="lang-can">
+													<option value="" selected disabled hidden>Language</option>
+													<option value="Java">Java</option>
+		  												<option value="C#">C#</option>
+		  												<option value="sql">SQL</option>
+		  												<option value="hadoop">Hadoop</option>
+		  												<option value="others">Others</option>
+												</select>
+											</div>
+											<div class="lb">
+												<button class="plus-can-tag"><i class="fas fa-plus"></i></button>
+											</div>
+
+										</div>
+
+										<div class="right">
+
+											<select id="workType-can">
+												<option value="" selected disabled hidden>Job Types</option>
+												<option value="Full-time">Full-time</option>
+												<option value="Part-time">Part-time</option>
+												<option value="Contract/Temp">Contract/Temp</option>
+												<option value="Casual/Vacation">Casual/Vacation</option>
+											</select>
+										</div>
+
+
+									</div>
+
+								</div>
+								<button id="search-can">Search</button>
+							</form>
+
+
+							<div class="search-candidate-btn"><button type="button">Finding Candidates?</button></div>
+	 					</div>
+	          		</div>
+    			</div>
+		</body>
+		<script type="text/javascript" src="../static/js/main-page.js"></script>
+</html>

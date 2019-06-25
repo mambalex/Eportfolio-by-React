@@ -1,0 +1,8 @@
+COMP9900 Team 488 Week10 Meeting Record
+02/10/2018
+
+After break we came back do our project.
+Before break we finished analyze relation.
+However we met some problem on front end connect to backend. The main issue is that how to get token from backend and store it in front end.
+Finally, we decided use JSON Web Token(JWT) to solve this problem.
+Next week Han Zhang and Yang Yang aim to finish all backend API, Zhiqin Zhang will continue work on connect to backend.

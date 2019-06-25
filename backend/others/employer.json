@@ -1,0 +1,470 @@
+{
+    "about_me": "As a industry leading company, look for candidate who study ML",
+    "code": 200,
+    "interview_list": [
+        {
+            "company_id": "employer1",
+            "interview_time": "22/10/2018 15:00",
+            "interview_uuid": "4f5cf110-cdd6-11e8-a3d1-4c3275989ef5",
+            "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+            "job_name": "ai engineer",
+            "location": "9-13 Hay St, Haymarket NSW 2000",
+            "status": "First Interview",
+            "student_id": "candidate2",
+            "student_name": "Emma"
+        },
+        {
+            "company_id": "employer1",
+            "interview_time": "22/10/2018 15:00",
+            "interview_uuid": "dbe24338-cdd6-11e8-96a9-4c3275989ef5",
+            "job_info_id": "3eef2e48-cd62-11e8-9a1a-4c3275989ef5",
+            "job_name": "web developer/programmer",
+            "location": "9-13 Hay St, Haymarket NSW 2000",
+            "status": "First Interview",
+            "student_id": "candidate1",
+            "student_name": "Alex"
+        }
+    ],
+    "interview_status_list": [
+        {
+            "status_name": "Start",
+            "status_uuid": "2b128e58-cdd3-11e8-894f-4c3275989ef5"
+        },
+        {
+            "status_name": "First Interview",
+            "status_uuid": "53e3baf0-cdd3-11e8-b600-4c3275989ef5"
+        },
+        {
+            "status_name": "Second Interview",
+            "status_uuid": "7413af9c-cdd3-11e8-b71a-4c3275989ef5"
+        },
+        {
+            "status_name": "HR Interview",
+            "status_uuid": "827f3f10-cdd3-11e8-a548-4c3275989ef5"
+        },
+        {
+            "status_name": "Finish",
+            "status_uuid": "2d4cbd28-cdd4-11e8-a778-4c3275989ef5"
+        },
+        {
+            "status_name": "Cancel",
+            "status_uuid": "529520de-cdd4-11e8-b7b2-4c3275989ef5"
+        },
+        {
+            "status_name": "Fail",
+            "status_uuid": "75a8bfe2-cdd4-11e8-a454-4c3275989ef5"
+        }
+    ],
+    "msg": "Get data success",
+    "open_job_list": [
+        {
+            "address": "None",
+            "company_id": "employer1",
+            "company_name": "Google",
+            "description": "This is a job that need candidate familiar with machine learning algorithms",
+            "itskill": [
+                "None"
+            ],
+            "job_id": "4c3a4ee0-26be-30ff-94a3-d58e0d98299a",
+            "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+            "job_title": "ai engineer",
+            "job_type": "full_time",
+            "location": "Sydney",
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "recommendation_list": [
+                {
+                    "base_mark": 30,
+                    "bonus": 0,
+                    "description": "I have lots of Python and Java experience.",
+                    "final_mark": 30,
+                    "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+                    "referrer": "System",
+                    "user_id": "candidate1",
+                    "user_name": "Alex"
+                },
+                {
+                    "base_mark": 40,
+                    "bonus": 0,
+                    "description": "I graduated from UNSW and learn lots of mechine learning and deep learning.",
+                    "final_mark": 40,
+                    "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+                    "referrer": "System",
+                    "user_id": "candidate2",
+                    "user_name": "Emma"
+                },
+                {
+                    "base_mark": 22,
+                    "bonus": 0,
+                    "description": "I am proficient in C++ and wanna find a job with C/C++.",
+                    "final_mark": 22,
+                    "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+                    "referrer": "System",
+                    "user_id": "candidate3",
+                    "user_name": "Allen"
+                },
+                {
+                    "base_mark": 20,
+                    "bonus": 0,
+                    "description": "My major is IT and look a backend developer job.",
+                    "final_mark": 20,
+                    "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+                    "referrer": "System",
+                    "user_id": "candidate4",
+                    "user_name": "Kevin"
+                },
+                {
+                    "base_mark": 28,
+                    "bonus": 0,
+                    "description": "I working on Python and Java for a long time and look for programmer job.",
+                    "final_mark": 28,
+                    "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+                    "referrer": "System",
+                    "user_id": "candidate5",
+                    "user_name": "Rose"
+                }
+            ],
+            "responsibility": [
+                "None"
+            ],
+            "salary": 100000,
+            "skill_require": [
+                {
+                    "id": "ec7ef635-1b41-3699-8592-eca99cd9346e",
+                    "name": "ai logics"
+                },
+                {
+                    "id": "b2fdd3d7-7ab2-3b63-97ea-b67a98b67ea9",
+                    "name": "algorithm basis"
+                },
+                {
+                    "id": "7de9dde7-88fd-3c47-b973-3a7ec4d9b07d",
+                    "name": "algorithmic verification"
+                },
+                {
+                    "id": "62bebfd9-8146-3ee8-b361-978cde4cd730",
+                    "name": "api development"
+                },
+                {
+                    "id": "bbd0dcf2-2d6e-3ae7-a0f3-f5b4dced5262",
+                    "name": "artificial intelligence basis"
+                },
+                {
+                    "id": "69089e61-a58d-3c15-a133-3f2b766f20b6",
+                    "name": "artificial intelligence programming language"
+                },
+                {
+                    "id": "898bc4e9-c21c-3d48-8024-d7c095896d80",
+                    "name": "computer graphics"
+                },
+                {
+                    "id": "faab44d2-5b65-352e-8bf7-51cc93a69431",
+                    "name": "computer vision"
+                },
+                {
+                    "id": "8e64b92f-7ecd-3d58-aa39-a7f1fd142d02",
+                    "name": "data mining"
+                },
+                {
+                    "id": "c9a63803-7215-3914-9e98-9a3005b2d90c",
+                    "name": "deep learning"
+                },
+                {
+                    "id": "56c0b67f-e8f2-353b-8a56-0d3a6f540eae",
+                    "name": "design and analysis of algorithms"
+                },
+                {
+                    "id": "45a287f8-ca08-3435-b46a-c9768c325236",
+                    "name": "extended design & analysis of algorithms"
+                },
+                {
+                    "id": "67ea51b3-fe07-3ad7-b5c9-75d9eed3adbe",
+                    "name": "graphic programming"
+                },
+                {
+                    "id": "2c00af02-8e97-3ceb-b686-3312db7744a1",
+                    "name": "hadoop"
+                },
+                {
+                    "id": "5a965597-6922-3209-8ed5-fe852c49a462",
+                    "name": "machine learning"
+                },
+                {
+                    "id": "357c99ad-186d-3685-9257-03ad6451a3aa",
+                    "name": "mathematical basis"
+                },
+                {
+                    "id": "a50d2753-f331-3adf-8566-dd284bb31a18",
+                    "name": "neural networks"
+                },
+                {
+                    "id": "191288e8-1cc7-3f07-a41f-4a66c6f5dfd3",
+                    "name": "performance evaluation"
+                },
+                {
+                    "id": "ef1cd4dd-d4f2-3d02-b085-05a95166f734",
+                    "name": "spark"
+                }
+            ]
+        },
+        {
+            "address": "None",
+            "company_id": "employer1",
+            "company_name": "Google",
+            "description": "This is a part time job that welcome students who want to learn machine learning",
+            "itskill": [
+                "None"
+            ],
+            "job_id": "4c3a4ee0-26be-30ff-94a3-d58e0d98299a",
+            "job_info_id": "ee0cb82e-cd61-11e8-b040-4c3275989ef5",
+            "job_title": "ai engineer",
+            "job_type": "part_time",
+            "location": "Sydney",
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "recommendation_list": [],
+            "responsibility": [
+                "None"
+            ],
+            "salary": 30000,
+            "skill_require": [
+                {
+                    "id": "ec7ef635-1b41-3699-8592-eca99cd9346e",
+                    "name": "ai logics"
+                },
+                {
+                    "id": "b2fdd3d7-7ab2-3b63-97ea-b67a98b67ea9",
+                    "name": "algorithm basis"
+                },
+                {
+                    "id": "7de9dde7-88fd-3c47-b973-3a7ec4d9b07d",
+                    "name": "algorithmic verification"
+                },
+                {
+                    "id": "62bebfd9-8146-3ee8-b361-978cde4cd730",
+                    "name": "api development"
+                },
+                {
+                    "id": "bbd0dcf2-2d6e-3ae7-a0f3-f5b4dced5262",
+                    "name": "artificial intelligence basis"
+                },
+                {
+                    "id": "69089e61-a58d-3c15-a133-3f2b766f20b6",
+                    "name": "artificial intelligence programming language"
+                },
+                {
+                    "id": "898bc4e9-c21c-3d48-8024-d7c095896d80",
+                    "name": "computer graphics"
+                },
+                {
+                    "id": "faab44d2-5b65-352e-8bf7-51cc93a69431",
+                    "name": "computer vision"
+                },
+                {
+                    "id": "8e64b92f-7ecd-3d58-aa39-a7f1fd142d02",
+                    "name": "data mining"
+                },
+                {
+                    "id": "c9a63803-7215-3914-9e98-9a3005b2d90c",
+                    "name": "deep learning"
+                },
+                {
+                    "id": "56c0b67f-e8f2-353b-8a56-0d3a6f540eae",
+                    "name": "design and analysis of algorithms"
+                },
+                {
+                    "id": "45a287f8-ca08-3435-b46a-c9768c325236",
+                    "name": "extended design & analysis of algorithms"
+                },
+                {
+                    "id": "67ea51b3-fe07-3ad7-b5c9-75d9eed3adbe",
+                    "name": "graphic programming"
+                },
+                {
+                    "id": "2c00af02-8e97-3ceb-b686-3312db7744a1",
+                    "name": "hadoop"
+                },
+                {
+                    "id": "5a965597-6922-3209-8ed5-fe852c49a462",
+                    "name": "machine learning"
+                },
+                {
+                    "id": "357c99ad-186d-3685-9257-03ad6451a3aa",
+                    "name": "mathematical basis"
+                },
+                {
+                    "id": "a50d2753-f331-3adf-8566-dd284bb31a18",
+                    "name": "neural networks"
+                },
+                {
+                    "id": "191288e8-1cc7-3f07-a41f-4a66c6f5dfd3",
+                    "name": "performance evaluation"
+                },
+                {
+                    "id": "ef1cd4dd-d4f2-3d02-b085-05a95166f734",
+                    "name": "spark"
+                }
+            ]
+        },
+        {
+            "address": "None",
+            "company_id": "employer1",
+            "company_name": "Google",
+            "description": "This is a job that need web developer who familiar with java and python",
+            "itskill": [
+                "None"
+            ],
+            "job_id": "1b8b3d18-dd4c-3948-a570-4e0de39b14dd",
+            "job_info_id": "3eef2e48-cd62-11e8-9a1a-4c3275989ef5",
+            "job_title": "web developer/programmer",
+            "job_type": "full_time",
+            "location": "Sydney",
+            "others": [
+                "None"
+            ],
+            "personal_strength": [
+                "None"
+            ],
+            "recommendation_list": [],
+            "responsibility": [
+                "None"
+            ],
+            "salary": 60000,
+            "skill_require": [
+                {
+                    "id": "72856a63-a110-3fda-8855-e9759c9d846f",
+                    "name": "advanced parallel algorithms"
+                },
+                {
+                    "id": "b2fdd3d7-7ab2-3b63-97ea-b67a98b67ea9",
+                    "name": "algorithm basis"
+                },
+                {
+                    "id": "62bebfd9-8146-3ee8-b361-978cde4cd730",
+                    "name": "api development"
+                },
+                {
+                    "id": "351a6212-43d8-390f-9d6c-39f352325693",
+                    "name": "basic algorithm"
+                },
+                {
+                    "id": "3760acfe-fffa-34d5-9ff2-9657c8f92f4f",
+                    "name": "basic web development"
+                },
+                {
+                    "id": "57f67dab-30e3-3535-8633-1bdb0fb688ee",
+                    "name": "basic web framework development"
+                },
+                {
+                    "id": "7402455f-1081-3fb6-a926-30126948e110",
+                    "name": "capacity planning"
+                },
+                {
+                    "id": "e787e2af-deca-3e00-83cc-3ef24d7ab0fa",
+                    "name": "cyber attack and defence"
+                },
+                {
+                    "id": "9999f509-b41a-3fac-b8ef-fa452db63be9",
+                    "name": "extended web application security"
+                },
+                {
+                    "id": "8b572158-3550-36db-988e-b2c6bad4df23",
+                    "name": "web application"
+                },
+                {
+                    "id": "f14b4e97-fa21-3cd7-b29b-2263da5810e4",
+                    "name": "web application security"
+                },
+                {
+                    "id": "f1908179-97c1-3adb-a302-a78a080d14fa",
+                    "name": "web service composition techniques"
+                }
+            ]
+        }
+    ],
+    "personal_info": {
+        "description": "As a industry leading company, look for candidate who study ML",
+        "email": "employer1@gmail.com",
+        "link": "www.google.com.au",
+        "location": "Sydney",
+        "name": "Google",
+        "phone": "9999999999",
+        "photo": "None",
+        "role": "employer",
+        "username": "employer1"
+    },
+    "resume_list": [
+        {
+            "enrol_id": "e7a59ed2-cdd5-11e8-b7d8-4c3275989ef5",
+            "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+            "job_name": "ai engineer",
+            "student_id": "candidate3"
+        },
+        {
+            "enrol_id": "ae750864-cdd5-11e8-ac21-4c3275989ef5",
+            "job_info_id": "a3312d80-cd61-11e8-8574-4c3275989ef5",
+            "job_name": "ai engineer",
+            "student_id": "candidate2"
+        }
+    ],
+    "role": "employer",
+    "saved_user_list": [
+        {
+            "email": "candidate1@gmail.com",
+            "experiences": [
+                {
+                    "description": "Date: 09/2017 - 01/18\nI did some project and task from other company, like an outsourcing.",
+                    "exp_type": 0,
+                    "link": "http://github.com",
+                    "name": "Self employed",
+                    "techs": "None",
+                    "user_id": "candidate1",
+                    "working_exp_uuid": "2beb7078-cdfc-11e8-817c-4c3275989ef5"
+                }
+            ],
+            "location": "Sydney",
+            "name": "Alex",
+            "project_list": [
+                {
+                    "description": "This is a project about website and chatbot",
+                    "exp_type": 1,
+                    "link": "http://github.com",
+                    "name": "COMP9323 Project",
+                    "techs": "None",
+                    "user_id": "candidate1",
+                    "working_exp_uuid": "51d43d08-cd5f-11e8-b912-4c3275989ef5"
+                }
+            ],
+            "role": "candidate",
+            "username": "candidate1"
+        },
+        {
+            "email": "candidate2@gmail.com",
+            "experiences": [],
+            "location": "Sydney",
+            "name": "Emma",
+            "project_list": [
+                {
+                    "description": "This is a project about implement mechine learning algorithm",
+                    "exp_type": 1,
+                    "link": "http://github.com",
+                    "name": "COMP9417 Project",
+                    "techs": "None",
+                    "user_id": "candidate2",
+                    "working_exp_uuid": "64003680-cd5f-11e8-8593-4c3275989ef5"
+                }
+            ],
+            "role": "candidate",
+            "username": "candidate2"
+        }
+    ],
+    "username": "employer1"
+}

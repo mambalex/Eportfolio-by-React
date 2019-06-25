@@ -1,0 +1,6 @@
+.Navs{
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    margin-bottom: 50px;
+}
