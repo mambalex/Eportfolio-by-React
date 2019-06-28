@@ -7,7 +7,7 @@ import * as actions from "../../store/actions";
 import uuid from "uuid";
 
 
-class Candidates extends Component{
+export class Candidates extends Component{
 
     showCanInfoHandler = (event, canInfo, jobState) =>{
         const top = event.pageY-200;
@@ -64,7 +64,7 @@ class Candidates extends Component{
                 var savedCans = this.displayCandidates(this.props.instructorCanData['saved_user_list'], 'Saved candidate');
                 return (
                     <div>
-                        <CanInfo/>
+                        <CanInfo />
                         {savedCans}
                     </div>
                 )

@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Candidate.module.css';
-import  './Candidate.module.css'
+
 
 const Candidate =(props)=> {
     var savedCanStyle='';
@@ -37,7 +37,7 @@ const Candidate =(props)=> {
                     <span>Applying for {props.canInfo['job_name']}</span>
                 </div>
             </div>
-            <div className={classes["job-tag"]}><i className="fas fa-user-alt"></i>{props.canType}</div>
+            <div className={classes["job-tag"]}><i className="fas fa-user-alt canType"></i>{props.canType}</div>
 
         </div>
     </div>)

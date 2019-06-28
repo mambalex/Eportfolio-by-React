@@ -13,7 +13,7 @@ const nextJobState ={
     '2nd interview': ['Got offer', 'Provide an Offer', "2d4cbd28-cdd4-11e8-a778-4c3275989ef5"]
 }
 
-class CanInfo extends Component{
+export class CanInfo extends Component{
 
     state = {
         selectedJob:  this.props.firstJob
