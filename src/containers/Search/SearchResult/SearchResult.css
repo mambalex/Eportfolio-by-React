@@ -73,7 +73,7 @@
     margin-bottom: 10px;
 }
 
-.Results .job p, .can p{
+.Results .job .title, .can .title{
     text-decoration: none;
     cursor: pointer;
     color: rgb(48,178,68) !important;

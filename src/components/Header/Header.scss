@@ -1,28 +1,30 @@
-.header {
+$headerColor:#02B875;
+
+.header{
   position: relative;
   display: flex;
   height: 52px;
   width: 100%;
-  background-color: #02B875;
+  background-color: $headerColor;
   margin-bottom: 30px;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0.2s;
 }
 
-.home {
+.home{
   position: absolute;
   left: 25px;
   padding-top: 11px;
   font-size: 20px;
 }
 
-.home a {
+.home a{
   text-decoration: none;
   /*color: rgb(56,186,75);*/
   color: white;
 }
 
-.welcome-user {
+.welcome-user{
   display: none;
   color: white;
   position: absolute;
@@ -30,17 +32,18 @@
   top: 18px;
 }
 
-.user {
+.user{
   position: absolute;
   right: 50px;
   padding-top: 13px;
   font-size: 20px;
   float: right;
   /*color: rgb(56,186,75);*/
-  color: white;
+  color:white;
 }
 
-.user:hover {
+
+.user:hover{
   cursor: pointer;
 }
 
@@ -50,16 +53,16 @@
   right: -10px;
   z-index: 3;
   min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
   font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
 }
 
 .dropdown-content a {
@@ -71,11 +74,7 @@
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  cursor: pointer;
-}
+  cursor: pointer;}
 
-.user:hover .dropbtn {
-  background-color: #3e8e41;
-}
 
-/*# sourceMappingURL=Header.css.map */
+.user:hover .dropbtn {background-color: #3e8e41;}

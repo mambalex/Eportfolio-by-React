@@ -1,4 +1,4 @@
-.candidates-container {
+.candidates-container{
   width: 100%;
   margin-bottom: 50px;
   display: none;
@@ -10,7 +10,7 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-.candidates-container .top {
+.candidates-container .top{
   height: 50px;
   width: 100%;
   background-color: white;
@@ -19,30 +19,29 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-.candidates-container .top .name {
+.candidates-container .top .name{
   margin-top: 13px;
   margin-left: 25px;
   display: inline-block;
   font-size: 22px;
   font-weight: 500;
 }
-
-.candidates-container .top .name span > i {
+.candidates-container .top .name span>i{
   margin-right: 15px;
-  color: #30b244;
+  color: rgb(48,178,68);
 }
-
-.candidates-container .top .name .location {
+.candidates-container .top .name .location{
   font-size: 14px;
   font-weight: 400;
 }
 
-.candidates-container .top .name > i {
+
+.candidates-container .top .name>i{
   margin-left: 100px;
   margin-right: 5px;
 }
 
-.candidates-container .top .candidate-info {
+.candidates-container .top .candidate-info{
   display: inline-block;
   float: right;
   margin-right: 20px;
@@ -50,13 +49,12 @@
   width: 100px;
   height: 30px;
 }
-
-.candidates-container .top .candidate-info button {
-  background-color: #30b244;
+.candidates-container .top .candidate-info button{
+  background-color: rgb(48,178,68);
   color: white;
   width: 100%;
   height: 100%;
-  border-radius: 0.25rem;
+  border-radius: .25rem;
   font-weight: 400;
   font-size: 15px;
   outline: none !important;
@@ -64,34 +62,34 @@
   cursor: pointer;
 }
 
-.candidates-container .top .candidate-info button:hover {
-  background-color: #179619;
+.candidates-container .top .candidate-info button:hover{
+  background-color: rgb(23,150,25);
 }
 
-.candidates-container .middle {
+
+.candidates-container .middle{
   margin-top: 1px;
-  background-color: #f8f8f8;
+  background-color: rgb(248,248,248);
   display: flex;
   justify-content: space-between;
 }
-
-.candidates-container .middle .image {
+.candidates-container .middle .image{
   width: 140px;
-  height: 150px;
+  height:150px;
   border: 1px solid black;
   display: inline-block;
 }
 
-.candidates-container .middle .profile-icon {
-  color: #30b244;
+.candidates-container .middle .profile-icon{
+  color: rgb(48,178,68);
   margin-top: 10px;
   margin-left: 60px;
 }
 
-.candidates-container .middle .profile {
+.candidates-container .middle .profile{
   word-break: break-word;
   width: 70%;
-  height: 100px;
+  height:100px;
   overflow: scroll;
   margin-right: 40px;
   margin-left: 40px;
@@ -99,7 +97,11 @@
   font-weight: 400;
 }
 
-.candidates-container .bottom {
+
+
+
+
+.candidates-container .bottom{
   display: flex;
   height: 50px;
   margin: 0;
@@ -107,21 +109,24 @@
   padding-left: 50px;
 }
 
-.candidates-container .bottom .job-tag {
+.candidates-container .bottom .job-tag{
   font-size: 13px;
   margin-top: 13px;
   margin-left: 10px;
   margin-right: 50px;
+
 }
 
-.candidates-container .bottom i {
+.candidates-container .bottom i{
   margin-right: 5px;
   margin-top: 5px;
 }
 
 /*.apply{*/
+
 /*}*/
-.candidates-container .bottom .savedCan {
+
+.candidates-container .bottom .savedCan{
   width: 183px;
   margin-top: 13px;
   font-size: 13px;
@@ -129,13 +134,17 @@
   margin-right: 50px;
 }
 
-.candidates-container .bottom .savedCan span {
+.candidates-container .bottom .savedCan span{
   display: none;
 }
 
-.candidates-container .bottom .job-tag-can {
+
+
+.candidates-container .bottom .job-tag-can{
   color: #dc3545;
 }
+
+
 
 img {
   display: block;
@@ -146,27 +155,15 @@ img {
   object-fit: cover;
 }
 
-@media (max-width: 500px) {
-  img, .candidates-container .top .location, .candidates-container .top i {
-    display: none;
-  }
-
-  .candidates-container .middle {
+@media (max-width: 500px){
+  img, .candidates-container .top .location, .candidates-container .top i{display: none}
+  .candidates-container .middle{
     height: 150px;
   }
-
-  .candidates-container .middle .profile-icon {
+  .candidates-container .middle .profile-icon{
     margin-left: 20px;
   }
 
-  .candidates-container .bottom {
-    height: 70px;
-    padding-left: 10px;
-  }
-
-  .candidates-container .bottom div {
-    margin-right: 10px;
-  }
+  .candidates-container .bottom{height:70px;padding-left: 10px}
+  .candidates-container .bottom div{margin-right: 10px}
 }
-
-/*# sourceMappingURL=Candidate.module.css.map */

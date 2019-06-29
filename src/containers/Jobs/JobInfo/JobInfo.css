@@ -1,117 +1,112 @@
 /*job-popup*/
-
-.job-popup{
-    display: flex;
-    position: absolute;
-    z-index: 10;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 10%;
-    transition: box-shadow 0.2s cubic-bezier(0.4, 1, 0.2, 0);
-    transition-delay: 0.2s;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    padding-bottom: 50px;
-    background-color: white;
-    border-top: 2px solid rgb(48,178,68);
+.job-popup {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 1, 0.2, 0);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  padding-bottom: 50px;
+  background-color: white;
+  border-top: 2px solid #30b244;
 }
-.job-popup>.title{
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-    font-size: 30px;
-    font-weight: 400;
-    padding: 25px 0 0 20px;
-    position: relative;
+.job-popup .title {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 25px 0 0 20px;
+  position: relative;
 }
-
-.job-popup .title>i{
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    font-size: 30px;
-    color: rgb(48,178,68);
-    cursor: pointer;
+.job-popup .title i {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 30px;
+  color: #30b244;
+  cursor: pointer;
 }
-
-.job-popup .list{
-    margin: 5px 10px 5px 35px;
+.job-popup .list {
+  margin: 5px 10px 5px 35px;
 }
-
-.job-popup i{
-    margin-right: 10px;
+.job-popup .left {
+  width: 150px;
+  display: inline-block;
 }
-
-.job-popup .left{
-    width: 150px;
-    display: inline-block;
+.job-popup .per-year {
+  margin-left: 5px;
 }
-.job-popup .per-year{
-    margin-left: 5px;
+.job-popup .salary-location {
+  height: 130px;
+  /*border: 1px solid black;*/
+  position: relative;
+  background-color: #eff1f1;
 }
-.job-popup .salary-location{
-    height: 130px;
-    /*border: 1px solid black;*/
-    position: relative;
-    background-color: rgb(239,241,241);
+.job-popup .save-job {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  margin-right: 20px;
+  width: 120px;
+  height: 40px;
 }
-
-.job-popup .save-job{
-    position: absolute;
-    right: 20px;
-    top:20px;
-    margin-right: 20px;
-    width: 120px;
-    height: 40px;
+.job-popup .save-job button {
+  background-color: #30b244;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  font-size: 15px;
+  outline: none !important;
+  border: none;
+  cursor: pointer;
 }
-.job-popup .save-job button{
-    background-color: rgb(48,178,68);
-    color: white;
-    width: 100%;
-    height: 100%;
-    border-radius: .25rem;
-    font-weight: 400;
-    font-size: 15px;
-    outline: none !important;
-    border: none;
-    cursor: pointer;
+.job-popup .save-job button:hover {
+  background-color: #179619;
 }
 
-.job-popup .save-job button:hover{
-    background-color: rgb(23,150,25);
+.job-popup i {
+  margin-right: 10px;
 }
 
-
-.job-popup .job-summary,.job-responsibilities,.skills-required-title,.personal-skills-title,.others-title{
-    background-color: white;
-    padding:10px 0 0 40px;
-    font-weight: 500;
-    font-size: 20px;
-}
-.job-popup .description,.responsibilities,.skills-required,.personal-skills,.others{
-    background-color: white;
-    padding-left: 100px;
-    padding-right: 40px;
+.job-popup .job-summary, .job-responsibilities, .skills-required-title, .personal-skills-title, .others-title {
+  background-color: white;
+  padding: 10px 0 0 40px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
-.deleteBtn{
-    margin-top: 10px;
-    margin-right: 50px;
-    height: 35px;
-    background-color: #dc3545;
-    color: white;
-    border-radius: .25rem;
-    font-weight: 400;
-    font-size: 16px;
-    outline: none !important;
-    border: none;
-    cursor: pointer;
+.job-popup .description, .responsibilities, .skills-required, .personal-skills, .others {
+  background-color: white;
+  padding-left: 100px;
+  padding-right: 40px;
 }
 
-.deleteBtn:hover{
-    background-color: #c82333;
+.deleteBtn {
+  margin-top: 10px;
+  margin-right: 50px;
+  height: 35px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  font-size: 16px;
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+}
+.deleteBtn:hover {
+  background-color: #c82333;
 }
 
-.job-popup .update{
-    top:30px;
-    right:50px;
+.job-popup .update {
+  top: 30px;
+  right: 50px;
 }
+
+/*# sourceMappingURL=JobInfo.css.map */

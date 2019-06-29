@@ -1,53 +1,64 @@
-import React,{Component} from 'react';
-import './Header.css'
-import { Link} from 'react-router-dom';
-import {connect} from "react-redux";
-import * as actions from "../../store/actions";
+import React, { Component } from 'react';
+import './Header.css';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-class Header extends Component{
 
+class Header extends Component {
     state={
-        dropDown:false
+      dropDown: false,
     }
-    showDropDown=()=>{
-        this.setState({dropDown:true})
+
+    showDropDown=() => {
+      this.setState({ dropDown: true });
     }
+
     render() {
-        var dropDown=null;
-        if(this.state.dropDown){
-            dropDown = (<div className="dropdown-content">
-                <a href="./" id='logout'>Logout</a>
-            </div>)
-        }
-        var link = (<Link to='/search' onClick={this.props.toggleHomeSearch}>Search</Link>);
-        if(this.props.searchOrHome=='Home'){link=(<Link to='/' onClick={this.props.toggleHomeSearch}>Home</Link>)}
-        return(
-            <nav className="header">
-                <div className="home">
-                    {link}
-                </div>
-                <div className="welcome-user">
+      let dropDown = null;
+      if (this.state.dropDown) {
+        dropDown = (
+          <div className="dropdown-content">
+            <a href="./" id="logout">Logout</a>
+          </div>
+        );
+      }
+      let link = (<Link to="/search" onClick={this.props.toggleHomeSearch}>Search</Link>);
+      if (this.props.searchOrHome === 'Home') { link = (<Link to="/" onClick={this.props.toggleHomeSearch}>Home</Link>); }
+      return (
+        <nav className="header">
+          <div className="home">
+            {link}
+          </div>
+          <div className="welcome-user">
                     Welcome,
-                </div>
-                <div className="user">
-                    <i className="fas fa-user-alt" onClick={this.showDropDown}></i>
-                    {dropDown}
-                </div>
-            </nav>
-        )
+          </div>
+          <div className="user">
+            <i role="presentation" className="fas fa-user-alt" onClick={this.showDropDown} />
+            {dropDown}
+          </div>
+        </nav>
+      );
     }
 }
 
-const mapStateToProps = state => {
-    return{
-        searchOrHome: state.searchResult.searchOrHome
-    }
-}
+const mapStateToProps = state => ({
+  searchOrHome: state.searchResult.searchOrHome,
+});
 
-const mapDispatchToProps = dispatch =>{
-    return{
-        toggleHomeSearch: ()=> dispatch({type:"TOGGLE HOME SEARCH"})
-    }
-}
+const mapDispatchToProps = dispatch => ({
+  toggleHomeSearch: () => dispatch({ type: 'TOGGLE HOME SEARCH' }),
+});
+
+
+Header.propTypes = {
+  toggleHomeSearch: PropTypes.func,
+  searchOrHome: PropTypes.string,
+};
+
+Header.defaultProps = {
+  toggleHomeSearch: () => {},
+  searchOrHome: 'Search',
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
